@@ -41,7 +41,12 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => __( 'Primary Menu', 'understrap' ),
+			'primary' => __( 'Primary', 'understrap' ),
+			'header-social' => __( 'Header social', 'understrap' ),
+			'header-contact' => __( 'Header contact', 'understrap' ),
+			'footer-corporate' => __( 'Footer corporate', 'understrap' ),
+			'footer-help' => __( 'Footer help', 'understrap' ),
+			'footer-contact' => __( 'Footer contact', 'understrap' ),
 		) );
 
 		/*
@@ -70,8 +75,8 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 		function my_custom_sizes( $sizes ) {
 		    return array_merge( $sizes, array(
 		        '600x400' => __( '600x400' ),
-						'400x600' => __( '400x600' ),
-						'600x600' => __( '600x600' ),
+				'400x600' => __( '400x600' ),
+				'600x600' => __( '600x600' ),
 		    ) );
 		}
 
@@ -80,17 +85,7 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 		 */
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
-		/*
-		 * Enable support for Post Formats.
-		 * See http://codex.wordpress.org/Post_Formats
-		 */
-		add_theme_support( 'post-formats', array(
-			'aside',
-			'image',
-			'video',
-			'quote',
-			'link',
-		) );
+		
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'understrap_custom_background_args', array(

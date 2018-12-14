@@ -249,30 +249,19 @@ section {
 .page-header {
 
   &--home {
-    padding: 200px 0;
-    height: 80vh;
-    max-height: 800px;
-    min-height: 400px;
+    padding: 300px 0;
+
     position: relative;
 
-    & .pos-vertical-center {
-      transform: translateY(-20%);
-    }
   }
 
   &--page {
     padding: 200px 0;
-    height: 50vh;
-    max-height: 800px;
-    min-height: 400px;
     position: relative;
 
-    & .pos-vertical-center {
-      transform: translateY(-20%);
-    }
   }
 
-  padding: 200px 0 100px;
+  padding: 200px 0;
   background-color: $dark;
 
   @include media-breakpoint-down(sm) {
