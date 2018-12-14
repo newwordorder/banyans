@@ -1,11 +1,11 @@
-$font-serif: 'Frank Ruhl Libre', serif;
-$font-sans: 'Libre Franklin', sans-serif;
+$font-serif: 'PT_Serif-Web-Regular', serif;
+$font-sans: 'Poppins-Regular', sans-serif;
 
+$font-sans-semibold: 'Poppins-SemiBold', sans-serif;
 
 
 html {
   font-size: 1rem;
-
 }
 
 /** @include media-breakpoint-up(lg) {
@@ -21,7 +21,7 @@ body {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   margin-bottom: 20px;
-  color: $heading-color;
+  color: $dark;
   font-family: $font-serif;
 }
 
@@ -29,6 +29,8 @@ h6, .h6 {
   font-family: $font-sans;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  color:$heading-color;
 }
 
 p {

@@ -32,9 +32,18 @@ section {
 
     &--primary {
       background-color: $primary;
-      * {
-        color: #fff;
+      h1, h2, h3, h4, h5 {
+        color: $body-color;
       }
+
+      h6 {
+        color:$heading-color;
+      }
+
+      .btn {
+        color:#fff;
+      }
+      
     }
 
   }
@@ -154,30 +163,33 @@ section {
 .btn {
   font-size: 0.825em;
   font-weight: 700;
-  font-family: $font-sans;
+  font-family: $font-sans-semibold;
   text-transform: uppercase;
   color: $primary;
-  padding: 0.8em 1.6em;
-  border-radius: 2em;
+  padding: 1rem 1.875rem;
+  border-radius: 3;
+  letter-spacing: 1px;
 
   &--solid {
-    background: $primary;
+    background: $dark;
     color: $white;
 
     &:hover {
-      background: darken($primary, 10%);
+      background: lighten($dark, 10%);
       color: $white;
     }
   }
 
   &--outline {
     background: transparent;
-    color: $primary;
-    border: 1px solid $primary;
+    color: $heading-color;
+    border: 1px solid rgba(#043452, 0.1);
 
     &:hover {
       background: $primary;
-      color: $white;
+      color: $heading-color;
+      border: 1px solid $primary;
+
     }
   }
 
@@ -446,4 +458,9 @@ section {
 
 .pagination-sm {
   @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+}
+
+.line{
+  width:70px;
+  border: 2px solid $primary;
 }

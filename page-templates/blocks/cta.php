@@ -29,7 +29,7 @@ $spaceBelow = get_sub_field('text_image_space_below');
 
           <?php if( $layout == 'vertical' ): ?>
 
-            <div class="col-md-8 text-center">
+            <div class="col-md-6 text-center">
                 <?php echo $text ?>
 
                 <?php get_template_part( 'page-templates/blocks/block-partials/buttons' ); ?>

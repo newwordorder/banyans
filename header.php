@@ -34,15 +34,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-			<div class="" >
+			<div class="align-items-center" >
 				<div class="header__inner">
+				<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
+
+					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="New Life">
+
+				</a>
 
 				<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
 
-					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="New Life">
-					<img class="logo logo--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="New Life">
+					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="New Life">
 
 				</a>
+
+				<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
+
+					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="New Life">
+
+				</a>
+
 
 				<a id="toggleMenu" class="toggle-menu">
 						<span class="line"></span>

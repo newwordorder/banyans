@@ -4,3 +4,34 @@ Author: Elliot Kidd & Nicholas MacArthur
 Description: Theme for Banyans
 
 */
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../fonts/Poppins/Poppins-SemiBold.eot);
+    src: url(../fonts/Poppins/Poppins-SemiBold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Poppins/Poppins-SemiBold.woff2) format('woff2'),
+         url(../fonts/Poppins/Poppins-SemiBold.woff) format('woff'),
+         url(../fonts/Poppins/Poppins-SemiBold.ttf) format('truetype'),
+         url(../fonts/Poppins/Poppins-SemiBold.svg#Poppins-SemiBold) format('svg');
+  }
+  
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins//Poppins-Regular.eot);
+    src: url(../fonts/Poppins//Poppins-Regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Poppins//Poppins-Regular.woff2) format('woff2'),
+         url(../fonts/Poppins//Poppins-Regular.woff) format('woff'),
+         url(../fonts/Poppins//Poppins-Regular.ttf) format('truetype'),
+         url(../fonts/Poppins//Poppins-Regular.svg#Poppins-Regular) format('svg');
+  }
+  
+  @font-face {
+    font-family: 'PT_Serif-Web-Regular';
+    src: url(../fonts/PT_Serif//PT_Serif-Web-Regular.eot);
+    src: url(../fonts/PT_Serif//PT_Serif-Web-Regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/PT_Serif//PT_Serif-Web-Regular.woff2) format('woff2'),
+         url(../fonts/PT_Serif//PT_Serif-Web-Regular.woff) format('woff'),
+         url(../fonts/PT_Serif//PT_Serif-Web-Regular.ttf) format('truetype'),
+         url(../fonts/PT_Serif//PT_Serif-Web-Regular.svg#PT_Serif-Web-Regular) format('svg');
+  }
+  
