@@ -26,11 +26,10 @@ $fallbackImage = get_field('fallback_image');
 
 <section id="sub-header"
 
-class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
-data-overlay="<?php echo $imageOverlay ?>"
+class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg"
+data-overlay="5"
 >
 
-<?php if( $headerType == 'image' ): ?>
 
   <?php if( !empty($image) ):
 
@@ -43,29 +42,12 @@ data-overlay="<?php echo $imageOverlay ?>"
       <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
     </div>
   <?php endif; ?>
-<?php endif; ?>
-<?php if( $headerType == 'video' ): ?>
 
-  <div class="youtube-background" data-video-url="<?php echo $video ?>"></div>
-
-  <?php if( !empty($fallbackImage) ):
-
-    // vars
-    $url = $fallbackImage['url'];
-    $alt = $fallbackImage['alt'];
-
-  ?>
-    <div class="background-image-holder">
-      <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-    </div>
-  <?php endif; ?>
-<?php endif; ?>
-<div class="container pos-vertical-center">
+<div class="container">
   <div class="row justify-content-center">
     <div class="col-md-10 text-center">
 
-      <h1 class="h6"><?php the_title(); ?></h1>
-      <h1 class="page-title">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+      <h1 class="page-title"><?php the_title(); ?></h1>
 
     </div>
   </div>

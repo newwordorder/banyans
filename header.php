@@ -30,53 +30,69 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 	<!-- ******************* The Navbar Area ******************* -->
-<div id="header" class="header" >
-
-		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
-			<div class="align-items-center" >
-				<div class="header__inner">
-				<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
-
-					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="New Life">
-
-				</a>
-
-				<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
-
-					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="New Life">
-
-				</a>
-
-				<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
-
-					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="New Life">
-
-				</a>
-
-
-				<a id="toggleMenu" class="toggle-menu">
-						<span class="line"></span>
-						<span class="line"></span>
-				</a>
-
-
-				<!-- The WordPress Menu goes here -->
+<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+<div class="header">
+<div id="header" class="header-top" >
+	<div class="header__inner" >
+		<div class="d-flex align-items-center w-100">
+			<div class="col">
 				<?php wp_nav_menu(
 					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'header__navigation',
-						'container_id'    => 'headerNavDropdown',
-						'menu_class'      => 'header-nav navigation',
+						'theme_location'  => 'header-social',
+						'container_class' => 'header-nav header-nav__left',
+						'container_id'    => '',
+						'menu_class'      => 'menu',
 						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
+						'menu_id'         => 'header__left',
 						'walker'          => new understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-				</div>
-			</div><!-- .container -->
+			</div>
+			<div class="col-md-3">
+			<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
 
-	</div><!-- #header -->
+				<img class="logo logo--light" src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="The Banyans">
+				<img class="logo logo--dark" src="<?php bloginfo('template_directory'); ?>/img/logo--dark.svg" alt="The Banyans">
+			</a>
+			</div>
+			<a id="toggleMenu" class="toggle-menu">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+			</a>
+
+			<div class="col">
+				<?php wp_nav_menu(
+					array(
+						'theme_location'  => 'header-contact',
+						'container_class' => 'header-nav header-nav__right',
+						'container_id'    => '',
+						'menu_class'      => 'menu',
+						'fallback_cb'     => '',
+						'menu_id'         => 'header__right',
+						'walker'          => new understrap_WP_Bootstrap_Navwalker(),
+					)
+				); ?>
+			</div>
+		
+		</div>
+	</div><!-- .container -->
+
+</div><!-- #header -->
+<div class="header-bottom">
+	<?php wp_nav_menu(
+		array(
+			'theme_location'  => 'primary',
+			'container_class' => 'header-nav header-nav__primary',
+			'container_id'    => '',
+			'menu_class'      => 'menu',
+			'fallback_cb'     => '',
+			'menu_id'         => 'header__primary',
+			'walker'          => new understrap_WP_Bootstrap_Navwalker(),
+		)
+	); ?>
+</div>
+</div>
 
 <script>
 

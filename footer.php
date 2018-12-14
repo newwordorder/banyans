@@ -42,7 +42,6 @@
 <?php wp_footer(); ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/flickity.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/fontawesome-all.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.js"></script>
