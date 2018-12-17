@@ -1,32 +1,84 @@
-#footer {
+.footer {
     background: #fff;
-    font-size: 0.875em;
-    padding: 100px 0 0 0;
+    font-size: 0.75em;
+    padding: 75px 0 0 0;
+    border-top: 1px solid $light;
+
+    a {
+        color: $dark;
+        opacity: 0.6;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.2s;
+        &:hover {
+            opacity: 1;
+        }
+    }       
 
     .row {
       margin-bottom: 30px;
     }
+    .footer-menu {
+        ul {
+            list-style: none;
+            text-align: center;
+            margin-bottom: 1rem;
+            line-height: 1.75rem;
+    
+            
 
-    .col-* {
-      margin-bottom: 30px;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 2rem;
+              }
+
+        }
     }
 
-    h1, h2, h3, h4, h5, h6, p {
+    
 
-        margin-bottom: 0;
+}
+
+.footer-social {
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
     }
-
-    a, a:visited {
-        color: #fff;
-        text-decoration: underline;
-        opacity: 1;
+    a {
+        color: $primary;
+        font-size: 1.6rem;
+        margin: 0 0.5rem;
         transition: 0.2s;
-    }
-    a:hover, a:active {
-        opacity: 0.6;
+        &:hover {
+            color: $dark;
+        }
     }
 }
 
 .footer__logo {
   width: 150px;
+  opacity: 1!important;
 }
+
+.footer__bottom {
+    border-top: 1px solid $light;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .row {
+        margin-bottom: 0px;
+      }
+
+    .makers-mark {
+        text-align: right;
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+          }
+    }
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
+}
+
