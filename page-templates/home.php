@@ -53,10 +53,25 @@ data-overlay="5"
   </div>
 </div>
 
+<div class="split__container container">
+<div class="row split__row">
+  <div class="col-md-12 text-center py-4"><p class="heading__split--title">Are you seeking support for...</p></div>
+  <div class="col-md-12">
+  <div class="row">
+    <div class="col-md-5 offset-md-1 heading__split heading__split--left"><h3>Yourself?</h3> <i class="fal fa-arrow-right"></i></div>
+    <div class="col-md-5 heading__split heading__split--right"><h3>A loved one?</h3> <i class="fal fa-arrow-right"></i></div>
+    </div>
+  </div>
+  </div>
+  </div>
+
 
 
 </section>
 
-<?php get_template_part( 'page-templates/blocks' ); ?>
+<?php get_template_part( 'page-templates/blocks' ); 
+      get_template_part( 'page-templates/blocks/pre-footer-cta' );
+
+?>
 
 <?php get_footer();
