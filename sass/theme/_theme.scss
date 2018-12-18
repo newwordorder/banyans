@@ -457,6 +457,11 @@ section {
   margin:auto;
 }
 
+.line--gold{
+  border:1px solid $gold;
+  margin:1em 0em;
+}
+
 .floatingBox{
   position: absolute;
   left: 50%;
@@ -506,6 +511,7 @@ section {
 }
 
 .overlap__section{
+  overflow:hidden;
   position:absolute;
   bottom:0px;
   width:100%;
