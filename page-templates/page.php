@@ -18,6 +18,7 @@ $backgroundImage = get_field('background_image');
 $image = $backgroundImage['background_image'];
 $imageOverlay = $backgroundImage['image_overlay'];
 $backgroundEffect = $backgroundImage['background_effect'];
+$headerText = get_field('header_text');
 
 ?>
 
@@ -43,9 +44,12 @@ data-overlay="5"
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-10 text-center">
-
-      <h1 class="page-title"><?php the_title(); ?></h1>
-
+      <?php if($headerText): ?>
+      <h1><?php echo $headerText; ?></h1>
+       <? else: ?>
+       <h1 class="page-title"><?php the_title(); ?></h1>
+       <?php endif; ?>
+       <hr class="line"/>
     </div>
   </div>
 </div>
