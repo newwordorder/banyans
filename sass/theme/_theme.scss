@@ -589,3 +589,37 @@ section {
     font-size: 0.75rem;
   }
 }
+
+.panel-heading{
+  font-size: 0.75rem;
+  text-transform:uppercase;
+  *{
+    text-decoration:none;
+    color:$heading-color;
+    font-family:$font-sans-semibold;
+    letter-spacing:1px;
+  }
+  .panel-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.blog-categories{
+  display:flex;
+  flex-direction:row;
+  align-content: center;
+  justify-content: center;
+  a{
+    margin:0em 1em;
+  }
+}
+
+.page-header{
+  position:relative;
+}
+
+.blog-tile__details{
+  text-align:center;
+}

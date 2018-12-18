@@ -68,7 +68,7 @@ if( !empty($image) ):
 
     </div>
     <div class="layer layer--3">
-      
+
 <svg width="2880px" height="135px" viewBox="0 0 2880 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.200000003">
         <g id="header-bottom" fill="#BD9860">

@@ -80,3 +80,8 @@ require get_template_directory() . '/inc/loadmore.php';
  */
 require get_template_directory() . '/inc/acf-options.php';
 
+/**
+ * FAQ Shortcode
+ */
+require get_template_directory() . '/inc/accordian-shortcode.php';
+
