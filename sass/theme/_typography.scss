@@ -65,3 +65,55 @@ hr {
     border: none;
   }
 }
+
+  .blockquote{
+  p{
+    font-size:1.5em;
+    font-family:$font-serif;
+    &:before{
+      content:'\201C';
+      color:#247691;
+      margin-right:2px;
+    }
+    &:after{
+      content:'\201D';
+      color:#247691;
+      margin-left:2px;
+
+    }
+  }
+}
+  .blockquote-footer{
+    padding:2em 0em;
+    display:flex;
+    align-items:center;
+    &:before{
+      content:'\2014 \2014 \2014';
+      margin-right:1em;
+      color:#247691;
+    }
+    p{
+      &:before{
+      content:'';
+      }
+      &:after{
+        content:'';
+      }
+      font-family:$font-sans-semibold;
+      text-transform:uppercase;
+      font-size:0.875em;
+      b{
+        color:#fff !important;
+        letter-spacing: 1px;
+      }
+      }
+    }
+
+    small{
+      font-family:$font-sans;
+      opacity:0.8;
+      font-size:0.875em;
+      line-height:1.375em;
+    }
+
+  

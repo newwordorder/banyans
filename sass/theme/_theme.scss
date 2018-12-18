@@ -451,7 +451,10 @@ section {
 
 .line{
   width:70px;
-  border: 2px solid $primary;
+
+  border:1px solid $white;
+  opacity:1 !important;
+  margin:auto;
 }
 
 .floatingBox{
@@ -526,5 +529,57 @@ section {
   }
   .layer--3{
     bottom:80px;
+  }
+}
+
+.overlap__section--team{
+  .layer--1{
+    bottom:-10px;
+    z-index:1 !important;
+  }
+  .layer--2{
+    bottom:20px;
+    z-index:0 !important;
+  }
+  .layer--3{
+    bottom:40px;
+    z-index:-1 !important;
+  }
+}
+
+
+.page-header--team{
+  padding:200px 0px 150px 0px;
+}
+.portrait{
+  position:absolute;
+  width:10em;
+  height:10em;
+  border-radius:50%;
+  overflow: hidden;
+  left:50%;
+  top:-8em;
+  z-index:5;
+  transform:translateX(-50%)
+}
+
+#single-wrapper{
+  position:relative;
+}
+
+.team__portrait{
+  position:relative;
+  height:18em;
+  width:100%;
+}
+
+.team__blurb{
+  padding:1em;
+  text-align:center;
+  h5{
+    margin-bottom:0.5em;
+  }
+  .team__position{
+    font-size: 0.75rem;
   }
 }
