@@ -593,6 +593,9 @@ section {
 .panel-heading{
   font-size: 0.75rem;
   text-transform:uppercase;
+  padding: 2rem 0;
+  border-top:1px solid #efefef;
+
   *{
     text-decoration:none;
     color:$heading-color;
@@ -604,6 +607,12 @@ section {
     justify-content: space-between;
     align-items: center;
   }
+  svg{
+    font-size:1.2rem;
+    *{
+      color:$gold;
+    }
+    }
 }
 
 .blog-categories{

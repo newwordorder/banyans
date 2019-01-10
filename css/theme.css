@@ -17820,7 +17820,9 @@ section.bg-effect--ken-burns {
 
 .panel-heading {
   font-size: 0.75rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 2rem 0;
+  border-top: 1px solid #efefef; }
   .panel-heading * {
     text-decoration: none;
     color: #247691;
@@ -17836,6 +17838,10 @@ section.bg-effect--ken-burns {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .panel-heading svg {
+    font-size: 1.2rem; }
+    .panel-heading svg * {
+      color: #BD9860; }
 
 .blog-categories {
   display: -webkit-box;
