@@ -110,10 +110,12 @@ data-overlay="5"
 </div>
 
 </section>
-
+<div class="remainder">
 <?php get_template_part( 'page-templates/blocks' ); 
       get_template_part( 'page-templates/blocks/pre-footer-cta' );
 
 ?>
+</div>
+<script src="<?php echo get_template_directory_uri(); ?>/js/homeIntro.js"></script>
 
 <?php get_footer();
