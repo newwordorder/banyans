@@ -25,7 +25,7 @@ $fallbackImage = get_field('fallback_image');
 
 $headerText = get_field('header_text');
 ?>
-
+<div class="overlayLayer"></div>
 <section id="sub-header"
 
 class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg"

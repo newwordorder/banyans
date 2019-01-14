@@ -17039,15 +17039,7 @@ small {
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   /* animation */
-  opacity: 1;
-  -webkit-transition: background 0.25s linear;
-  transition: background 0.25s linear;
-  /* fix chrom flicker? */
-  -webkit-backface-visibility: hidden;
-  /* Chrome, Safari, Opera */
-  backface-visibility: hidden;
-  -webkit-transition: 0.4s;
-  transition: 0.4s; }
+  opacity: 1; }
   @media (max-width: 767.98px) {
     .header-top {
       margin-left: 0px;
@@ -17864,6 +17856,16 @@ section.bg-effect--ken-burns {
 
 .blog-tile__details {
   text-align: center; }
+
+.overlayLayer {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: #fff; }
 
 /*
 * Use existing Bootstrap 4 classes and
