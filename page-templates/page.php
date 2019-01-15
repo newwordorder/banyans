@@ -55,5 +55,6 @@ data-overlay="5"
 </section>
 
 <?php get_template_part( 'page-templates/blocks' ); ?>
+<?php get_template_part( 'page-templates/blocks/pre-footer-cta' ); ?>
 
 <?php get_footer();
