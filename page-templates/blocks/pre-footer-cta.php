@@ -74,7 +74,7 @@ $spaceBelow = $preFooterSetup['space_below'];
                   $buttonStyle = get_sub_field('button_style','options');
                   ?>
 
-                  <a href="<?php if($linkType == "page"): echo $pageUrl; endif; ?><?php if($linkType == "url"):  echo $url; endif; ?>" class="btn btn--<?php echo $buttonStyle ?>"><?php if($buttonStyle == "link"): echo '<i class="far fa-arrow-circle-right"></i>'; endif; ?><?php if($buttonStyle == "outline"): echo '<span>'; endif; ?><?php echo $buttonText ?><?php if($buttonStyle == "outline"): echo '</span>'; endif; ?> </a>
+                  <a href="<?php if($linkType == "page"): echo $pageUrl; endif; ?><?php if($linkType == "url"):  echo $url; endif; ?>" class="btn btn--<?php echo $buttonStyle ?>"><?php if($buttonStyle == "outline"): echo '<span>'; endif; ?><?php echo $buttonText ?><?php if($buttonStyle == "outline"): echo '</span>'; endif; ?> </a>
 
                 <?php endwhile; ?>
               </div>
@@ -86,7 +86,7 @@ $spaceBelow = $preFooterSetup['space_below'];
 
           <?php if( $layout == 'vertical' ): ?>
 
-            <div class="col-md-8 text-center">
+            <div class="col-md-6 text-center">
                 <?php echo $text ?>
 
                 <?php if( get_field('include_buttons','options') == 'yes' ): ?>
@@ -101,7 +101,7 @@ $spaceBelow = $preFooterSetup['space_below'];
                           $buttonStyle = get_sub_field('button_style','options');
                           ?>
 
-                          <a href="<?php if($linkType == "page"): echo $pageUrl; endif; ?><?php if($linkType == "url"):  echo $url; endif; ?>" class="btn btn--<?php echo $buttonStyle ?>"><?php if($buttonStyle == "link"): echo '<i class="far fa-arrow-circle-right"></i>'; endif; ?><?php if($buttonStyle == "outline"): echo '<span>'; endif; ?><?php echo $buttonText ?><?php if($buttonStyle == "outline"): echo '</span>'; endif; ?> </a>
+                          <a href="<?php if($linkType == "page"): echo $pageUrl; endif; ?><?php if($linkType == "url"):  echo $url; endif; ?>" class="btn btn--<?php echo $buttonStyle ?>"><?php if($buttonStyle == "outline"): echo '<span>'; endif; ?><?php echo $buttonText ?><?php if($buttonStyle == "outline"): echo '</span>'; endif; ?> </a>
 
                         <?php endwhile; ?>
                       </div>
