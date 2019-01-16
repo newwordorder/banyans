@@ -29,7 +29,7 @@ function HomeIntro() {
     const backgroundZoom = () => {
         tl.add(TweenLite.to('.overlayLayer', 0.6, {opacity:0,  ease: customEase()}))
         tl.add(TweenLite.to(backgroundImage('.page-header'), 1.8, {height: '100%', width: '100%',  transform: 'translate(-0%)', ease: customEase() }), '-=0.4');
-        tl.add(TweenLite.to('.page-header', 1.8, {height: '60vh', ease: customEase() }), '-=1.8' );
+        tl.add(TweenLite.to('.page-header', 1.8, {height: '70vh', ease: customEase() }), '-=1.8' );
         tl.add( TweenLite.to('.layer--1', 1, {bottom:'0px'}), '-=1.8' );
         tl.add( TweenLite.to('.layer--2', 1, {bottom:'40px'}), '-=1.6' );
         tl.add( TweenLite.to('.layer--3', 1, {bottom:'80px'}), '-=1.4' );

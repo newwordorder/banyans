@@ -3,6 +3,7 @@
 $blockSetup = get_sub_field('block_setup');
 
   $space = $blockSetup['space'];
+  $id = $blockSetup['block_id'];
   $background = $blockSetup['block_background'];
   $flipLayout = $blockSetup['flip_layout'];
 
@@ -16,7 +17,7 @@ $backgroundImage = $blockSetup['background_image'];
 ?>
 
 
-<section
+<section id="<?php echo $id ?>"
 
   class="bg--<?php echo $background ?> space--<?php echo $space ?> bg-effect--<?php echo $backgroundEffect ?> <?php if( $background == 'image' ): echo 'imagebg'; endif; ?> <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
   <?php if( $background == 'image' ): ?>

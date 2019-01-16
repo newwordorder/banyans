@@ -23,19 +23,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   margin-bottom: 20px;
   color: $dark;
   font-family: $font-serif;
+  line-height: 1.4;
 }
 
 h6, .h6 {
+  font-size: 0.75rem;
   font-family: $font-sans;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   color:$heading-color;
+  
 }
 
 p {
   color: $body-color;
   font-family: $font-sans;
+  line-height: 1.8;
 }
 
 .lead {
@@ -116,4 +120,10 @@ hr {
       line-height:1.375em;
     }
 
-  
+    a:not(.btn) {
+      color: darken($primary,10%);
+      transition: 0.2s;
+      &:hover {
+        color: $primary;
+      }
+    }

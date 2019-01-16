@@ -56,9 +56,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</a>
 			</div>
 			<a id="toggleMenu" class="toggle-menu">
-					<span class="line"></span>
-					<span class="line"></span>
-					<span class="line"></span>
+					<span class="toggle-line"></span>
+					<span class="toggle-line"></span>
+					<span class="toggle-line"></span>
 			</a>
 
 			<div class="col">
@@ -85,20 +85,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 			'theme_location'  => 'primary',
 			'container_class' => 'header-nav header-nav__primary',
 			'container_id'    => '',
-			'menu_class'      => 'menu',
+			'menu_class'      => 'menu header__primary',
 			'fallback_cb'     => '',
 			'menu_id'         => 'header__primary',
-			'walker'          => new understrap_WP_Bootstrap_Navwalker(),
 		)
 	); ?>
 </div>
 </div>
 
+
 <script>
 
 (function($) {
 		$(".toggle-menu").click(function () {
-			$(".toggle-menu,.header-nav").toggleClass("is-active");
+			$(".toggle-menu,#header__primary").toggleClass("is-active");
 	});
 })( jQuery );
 </script>
