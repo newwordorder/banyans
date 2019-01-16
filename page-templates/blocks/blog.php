@@ -45,7 +45,7 @@ if( get_row_layout() == 'blog_posts' ):
 								</div>
 							<?php endif; ?>
 						</div>
-
+            <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
 						<h3><?php the_title(); ?></h3>
 					</a>
 

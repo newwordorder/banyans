@@ -23,6 +23,13 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/__.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/__.php",
+		"oF": 0
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -351,6 +358,36 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
+	"/img/filled_layer.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/filled_layer.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/layer_2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/layer_2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/layer_3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/layer_3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/logo--dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -381,6 +418,13 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/inc/accordian-shortcode.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/inc/accordian-shortcode.php",
+		"oF": 0
 		},
 	"/inc/acf-options.php": {
 		"cB": 0,
@@ -548,6 +592,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/CustomEase.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/CustomEase-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/customizer.js": {
 		"ft": 64,
 		"ma": 0,
@@ -614,6 +668,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/header-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/homeIntro.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/homeIntro-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -688,6 +752,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/onload.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/onload-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/parallax-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -748,6 +822,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/scrollReveal.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/scrollReveal-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/skip-link-focus-fix.js": {
 		"ft": 64,
 		"ma": 0,
@@ -804,6 +888,26 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/theme.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/TimelineMax.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/TimelineMax.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/TweenMax.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/TweenMax.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1148,6 +1252,13 @@
 		"oAP": "/page-templates/blocks/block-setup.php",
 		"oF": 0
 		},
+	"/page-templates/blocks/blog.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/blog.php",
+		"oF": 0
+		},
 	"/page-templates/blocks/carousel.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1190,6 +1301,20 @@
 		"oAP": "/page-templates/blocks/line-break.php",
 		"oF": 0
 		},
+	"/page-templates/blocks/overlap.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/overlap.php",
+		"oF": 0
+		},
+	"/page-templates/blocks/postTextblock.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/postTextblock.php",
+		"oF": 0
+		},
 	"/page-templates/blocks/pre-footer-cta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1204,6 +1329,13 @@
 		"oAP": "/page-templates/blocks/projects.php",
 		"oF": 0
 		},
+	"/page-templates/blocks/team.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/team.php",
+		"oF": 0
+		},
 	"/page-templates/blocks/text-block.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1216,6 +1348,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/blocks/text-image.php",
+		"oF": 0
+		},
+	"/page-templates/blocks/text-text.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/text-text.php",
 		"oF": 0
 		},
 	"/page-templates/blocks/video.php": {
@@ -1237,6 +1376,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/page.php",
+		"oF": 0
+		},
+	"/page-templates/postblocks.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/postblocks.php",
 		"oF": 0
 		},
 	"/page.php": {
@@ -1567,6 +1713,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/searchform.php",
+		"oF": 0
+		},
+	"/single-team.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/single-team.php",
 		"oF": 0
 		},
 	"/single.php": {
@@ -2951,6 +3104,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/woocommerce.php",
+		"oF": 0
+		},
+	"/yarn.lock": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/yarn.lock",
 		"oF": 0
 		}
 	},

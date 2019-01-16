@@ -13,6 +13,8 @@ $spaceBelow = get_sub_field('space_below');
 ?>
 
   <div class="container space-below--<?php echo $spaceBelow ?>">
+  <div class="row justify-content-center">
+  <div class="col-md-10">
     <div class="row justify-content-between <?php if( $flipLayout == 'yes' ): echo ''; endif; ?>">
         <div class=" flippable__text  <?php if( $flipLayout == 'yes' ): if( $layout == '1/3' ): echo 'col-md-8'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-5'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-4'; endif; else: if( $layout == '1/3' ): echo 'col-md-8'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-5'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-4'; endif; endif; ?>" >
             <?php echo $text ?>
@@ -22,7 +24,8 @@ $spaceBelow = get_sub_field('space_below');
         </div>
     </div>
   </div>
-
+  </div>
+</div>
 <?php endif; //end text_image row
 
 ?>
