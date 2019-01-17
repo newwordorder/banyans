@@ -28,8 +28,8 @@
             $out .='<p class="panel-title">';
             $out .='<a role="button" data-toggle="collapse" data-parent="#accordion" href="#'. $id .'" aria-expanded="true" aria-controls="collapseOne" class="collapsed">';
             $out .= $question;
-            $out .='</a>';
-            $out .='<i class="fal fa-plus js-rotate-if-collapsed"></i>';
+            $out .='<i class="fal fa-plus js-rotate-if-collapsed"></i></a>';
+            $out .='';
             $out .='</p>';
             $out .='</div>';
             $out .='<div id="'. $id .'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">';

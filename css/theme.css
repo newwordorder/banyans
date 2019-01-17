@@ -16425,7 +16425,7 @@ section.bg--dark {
 section.bg--primary {
   background-color: #AAD0D0; }
   section.bg--primary h1, section.bg--primary h2, section.bg--primary h3, section.bg--primary h4, section.bg--primary h5 {
-    color: #3C6279; }
+    color: #043452; }
   section.bg--primary h6 {
     color: #247691; }
   section.bg--primary .btn,
@@ -16853,24 +16853,35 @@ section.bg-effect--ken-burns {
   .team__blurb .team__position {
     font-size: 0.75rem; }
 
-.panel-heading {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  padding: 2rem 0;
+.panel {
+  padding: 1.25rem 0;
   border-top: 1px solid #efefef; }
-  .panel-heading * {
-    text-decoration: none;
-    color: #247691;
-    font-family: "Poppins-SemiBold", sans-serif;
-    letter-spacing: 1px; }
-  .panel-heading .panel-title {
+  .panel .panel-title {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .panel-heading svg {
-    font-size: 1.2rem; }
-    .panel-heading svg * {
-      color: #BD9860; }
+    .panel .panel-title a {
+      text-transform: uppercase;
+      display: block;
+      font-size: 0.75rem;
+      width: 100%;
+      letter-spacing: 1px;
+      font-family: "Poppins-SemiBold", sans-serif;
+      color: #043452;
+      text-decoration: none;
+      position: relative;
+      padding-right: 3rem; }
+  .panel svg {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 1rem;
+    top: 0; }
+    .panel svg * {
+      color: #AAD0D0; }
+  .panel:nth-last-of-type(1) {
+    border-bottom: 1px solid #efefef; }
+  .panel p:nth-last-of-type(1) {
+    margin-bottom: 0; }
 
 .blog-categories {
   display: flex;
