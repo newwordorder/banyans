@@ -621,17 +621,14 @@ section {
 }
 
 .panel {
-  
-  
-  padding: 1.25rem 0;
+
   border-top:1px solid #efefef;
-
-
   .panel-title {
     display: flex;
     justify-content: space-between;
       align-items: center;
     a {
+      padding: 1.25rem;
       text-transform:uppercase;
       display: block;
       font-size: 0.75rem;
@@ -642,14 +639,23 @@ section {
       text-decoration:none;
       position: relative;
       padding-right: 3rem;
+      &:hover {
+        background-color: #efefef;
+      }
+
+      &[aria-expanded=true] {
+        svg {
+          transform: rotate(45deg);
+        }
+      }
     }
   }
   svg{
     font-size:1.2rem;
     position: absolute;
     right: 1rem;
-    top: 0;
-
+    top: 1.25rem;
+    transition: 0.2s;
     *{
       color:$primary;
     }
@@ -661,6 +667,10 @@ section {
 
     p:nth-last-of-type(1) {
       margin-bottom:0;
+    }
+
+    .panel-body {
+      padding: 0 1.25rem;
     }
 }
 
