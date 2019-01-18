@@ -482,6 +482,13 @@
 		"oAP": "/inc/extras.php",
 		"oF": 0
 		},
+	"/inc/featured-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/inc/featured-post.php",
+		"oF": 0
+		},
 	"/inc/jetpack.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -868,6 +875,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/spectragram.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/swiper.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/swiper-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1374,6 +1391,13 @@
 		"oAP": "/page-templates/blocks/video.php",
 		"oF": 0
 		},
+	"/page-templates/contact.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/contact.php",
+		"oF": 0
+		},
 	"/page-templates/home.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1686,6 +1710,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/sass/theme/swiper.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/sass/theme/swiper-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/sass/understrap/understrap.scss": {
 		"aP": 0,
@@ -3089,16 +3123,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/style-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/style-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -3108,13 +3132,6 @@
 		"oAP": "/style-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/woocommerce.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/woocommerce.php",
-		"oF": 0
 		},
 	"/yarn.lock": {
 		"cB": 0,

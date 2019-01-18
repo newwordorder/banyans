@@ -13,40 +13,7 @@ body {
 
 section {
 
-  &.bg {
-
-    &--none {
-      background-color: #fff;
-    }
-
-    &--light {
-      background-color: $light;
-    }
-
-    &--dark {
-      background-color: $dark;
-      * {
-        color: #fff;
-      }
-    }
-
-    &--primary {
-      background-color: $primary;
-      h1, h2, h3, h4, h5 {
-        color: $dark;
-      }
-
-      h6 {
-        color:$heading-color;
-      }
-
-      .btn {
-        color:#fff;
-      }
-      
-    }
-
-  }
+  position: relative;
 
   &.space {
 
@@ -81,6 +48,41 @@ section {
         -webkit-animation: kenBurns 15s ease alternate infinite;
       }
     }
+  }
+
+}
+
+.bg {
+
+  &--none {
+    background-color: #fff;
+  }
+
+  &--light {
+    background-color: $light;
+  }
+
+  &--dark {
+    background-color: $dark;
+    * {
+      color: #fff;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+    h1, h2, h3, h4, h5 {
+      color: $dark;
+    }
+
+    h6 {
+      color:$heading-color;
+    }
+
+    .btn {
+      color:#fff;
+    }
+    
   }
 
 }
@@ -167,7 +169,7 @@ section {
   text-transform: uppercase;
   color: $primary;
   padding: 1rem 1.875rem;
-  border-radius: 3;
+  border-radius: 3px;
   letter-spacing: 1px;
 
   &--solid {
@@ -268,6 +270,9 @@ section {
     padding:200px 0px 150px 0px;
   }
 
+  &--blog {
+    position: relative;
+  }
   
 }
 
@@ -340,9 +345,10 @@ section {
   &__thumb {
     position: relative;
     height: 0;
-    overflow: hidden;
-    padding-bottom: 66%;
+    padding-bottom: 56.25%;
     margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
 
     &:hover .background-image-holder {
       transform: scale(1.1);
@@ -465,11 +471,16 @@ section {
 }
 
 .floatingBox{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%)translateY(-50%);
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
 }
-
+.floatingBox__underlay {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  width: 100%;
+}
 .heading__split{
   padding:2.5em;
   display: flex;
@@ -549,6 +560,7 @@ section {
   bottom:0px;
   width:100%;
   height:110px;
+  z-index: 100;
   .layer{
     position:absolute;
     bottom:0;
@@ -605,7 +617,8 @@ section {
 
 .team__portrait{
   position:relative;
-  height:18em;
+  padding-bottom: 156.25%;
+  height: 0;
   width:100%;
 }
 
@@ -714,3 +727,35 @@ section {
   }
 }
 
+.blog-carousel {
+  display: grid;
+  overflow: hidden;
+
+  .next, .prev {
+    position: absolute;
+    top: 50%;
+    z-index: 1020;
+    color: $white;
+    font-size: 1.25rem;
+    opacity: 0;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+      opacity: 1!important;
+    }
+  }
+
+  .next {
+    right: 3rem;
+  }
+
+  .prev {
+    left: 3rem;
+  }
+
+  &:hover {
+    .next, .prev {
+      opacity: 0.7;
+    }
+  }
+}
