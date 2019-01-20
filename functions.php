@@ -85,3 +85,8 @@ require get_template_directory() . '/inc/acf-options.php';
  */
 require get_template_directory() . '/inc/accordian-shortcode.php';
 
+/**
+ * Featured post
+ */
+require get_template_directory() . '/inc/featured-post.php';
+

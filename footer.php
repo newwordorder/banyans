@@ -96,7 +96,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/flickity.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/fontawesome-all.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/typed.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/smooth-scroll.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/ytplayer.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/aos.js"></script>
@@ -105,12 +104,34 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/CustomEase.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/scrollReveal.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/onload.js"></script>
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/swiper.js"></script>
+
+    
 
 <script>
 	AOS.init();
 </script>
+
+<script>
+  var mySwiper = new Swiper ('.blog-carousel', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.next',
+      prevEl: '.prev',
+    },
+
+  })
+  </script>
 
 </body>
 
