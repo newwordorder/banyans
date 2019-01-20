@@ -16607,7 +16607,8 @@ section {
     margin-bottom: 20px; }
 
 .related-posts {
-  background: #F8F8F6; }
+  background: #F8F8F6;
+  padding: 0 0 50px 0; }
 
 .embed-container {
   position: relative;

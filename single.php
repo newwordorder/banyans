@@ -104,14 +104,14 @@ if( !empty($image) ):
 
 </section><!-- Wrapper end -->
 
-<section class="related-posts">
+<section class="related-posts  pb-5">
   <div class="container">
-    <div class="row py-5">
+    <div class="row pt-5 pb-2">
       <div class="col text-center">
         <h2>Related articles</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
     <?php
         // Default arguments
         $args = array(

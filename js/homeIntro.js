@@ -53,3 +53,7 @@ function HomeIntro() {
 
 
 }
+
+window.onload = function(){
+    HomeIntro();
+}

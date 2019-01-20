@@ -23,13 +23,6 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
-	"/__.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "/__.php",
-		"oF": 0
-		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -137,6 +130,92 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/css/theme.min.css.map",
+		"oF": 0
+		},
+	"/favicon/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 7255,
+		"oA": 0,
+		"oAP": "/favicon/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 6581,
+		"oA": 0,
+		"oAP": "/favicon/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/favicon/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/favicon/browserconfig.xml",
+		"oF": 0
+		},
+	"/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 789,
+		"oA": 0,
+		"oAP": "/favicon/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1285,
+		"oA": 0,
+		"oAP": "/favicon/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/favicon/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/favicon/favicon.ico",
+		"oF": 0
+		},
+	"/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 4959,
+		"oA": 0,
+		"oAP": "/favicon/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/favicon/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/favicon/site.webmanifest",
 		"oF": 0
 		},
 	"/fonts/fontawesome-webfont.eot": {
@@ -755,16 +834,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/navigation-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/onload.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/onload-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3149,7 +3218,7 @@
 	"creationDate": 552910644,
 	"displayValue": "banyans",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_purple",
+	"iconImageName": "/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
