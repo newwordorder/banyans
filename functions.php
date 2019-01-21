@@ -90,3 +90,8 @@ require get_template_directory() . '/inc/accordian-shortcode.php';
  */
 require get_template_directory() . '/inc/featured-post.php';
 
+/**
+ * remove seo_article slug
+ */
+require get_template_directory() . '/inc/seo-articles.php';
+

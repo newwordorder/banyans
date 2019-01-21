@@ -53,10 +53,13 @@ if( !empty($image) ):
 	<div class="container" id="content" tabindex="-1">
 
 			<main id="main">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <?php the_content(); ?>
+            </div>
+          </div>
 
-					<?php the_content();
-
-          // check if the flexible content field has rows of data
+          <?php  // check if the flexible content field has rows of data
           if( have_rows('posts_blocks') ):
 
             // loop through the rows of data

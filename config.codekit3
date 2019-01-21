@@ -589,6 +589,13 @@
 		"oAP": "/inc/pagination.php",
 		"oF": 0
 		},
+	"/inc/seo-articles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/inc/seo-articles.php",
+		"oF": 0
+		},
 	"/inc/setup.php": {
 		"cB": 0,
 		"ft": 8192,

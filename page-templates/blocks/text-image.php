@@ -48,23 +48,9 @@ $spaceBelow = get_sub_field('space_below');
 
             <?php if( $media == 'video' ): ?>
 
-              <div class="video-cover rounded">
-              	<div class="background-image-holder rounded">
-                  <?php if( !empty($videoCoverImage) ):
-
-                    // vars
-                    $url = $videoCoverImage['url'];
-                    $alt = $videoCoverImage['alt'];
-
-                   ?>
-                    <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-                  <?php endif; //end $image ?>
-              	</div>
-              	<div class="video-play-icon video-play-icon--sm"></div>
                 <div class="embed-container rounded">
               	   <?php echo $videoEmbedCode; ?>
                 </div>
-              </div><!--end video cover-->
 
             <?php endif; //end $media ?>
           </div>
