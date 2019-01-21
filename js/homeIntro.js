@@ -54,7 +54,7 @@ function HomeIntro() {
         transform: "translate(-0%)",
         ease: customEase()
       }),
-      "-=0.4"
+      "-=0.3"
     );
     tl.add(
       TweenLite.to(".page-header", 1.8, {
