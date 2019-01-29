@@ -1362,13 +1362,6 @@
 		"oAP": "/page-templates/blocks/blog.php",
 		"oF": 0
 		},
-	"/page-templates/blocks/carousel.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-templates/blocks/carousel.php",
-		"oF": 0
-		},
 	"/page-templates/blocks/cta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1388,6 +1381,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/blocks/feature-tiles.php",
+		"oF": 0
+		},
+	"/page-templates/blocks/gallery.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/gallery.php",
 		"oF": 0
 		},
 	"/page-templates/blocks/image.php": {
@@ -1807,15 +1807,18 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/sass/theme/swiper.css": {
-		"aP": 1,
+	"/sass/theme/swiper.scss": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "/sass/theme/swiper-min.css",
+		"oA": 1,
+		"oAP": "/sass/theme/swiper.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 0,
+		"uL": 1
 		},
 	"/sass/understrap/understrap.scss": {
 		"aP": 0,

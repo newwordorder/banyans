@@ -18,6 +18,7 @@ $flipLayout = get_sub_field('flip_layout');
 $spaceBelow = get_sub_field('space_below');
 
 
+
 ?>
 
   <div class="container space-below--<?php echo $spaceBelow ?>">
@@ -43,6 +44,36 @@ $spaceBelow = get_sub_field('space_below');
             <?php endif; //end $media ?>
 
             <?php if( $media == 'gallery' ): ?>
+
+            <?php 
+
+              $images = get_sub_field('gallery');
+              $size = 'full';
+
+              if( $images ): ?>
+              
+              
+                <!-- Slider main container -->
+                <div class="swiper-container gallery">
+                  <!-- Additional required wrapper -->
+                  
+                  <div class="swiper-wrapper align-items-center">
+
+                    <?php foreach( $images as $image ): ?>
+                    
+                      <img class="swiper-slide mb-0" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <?php endforeach; ?>
+            
+                  </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="prev"><i class="fal fa-arrow-left"></i></div>
+	                  <div class="next"><i class="fal fa-arrow-right"></i></div>
+                </div>
+   
+            <?php endif; ?>
 
             <?php endif; //end $media ?>
 

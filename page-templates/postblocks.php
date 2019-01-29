@@ -6,10 +6,36 @@ if( have_rows('posts_blocks') ) {
 
   while ( have_rows('posts_blocks') ) { the_row();
       // loop through the rows of data
-      echo '<div class="p-4">';
-         get_template_part( 'page-templates/blocks/postTextblock' );
-         get_template_part( 'page-templates/blocks/image' );
-        echo '</div>';
+      echo '<div class="p-4">'; ?>
+
+<?php // TEXT BLOCK
+
+if( get_row_layout() == 'text_block' ):
+
+  $textBlock = get_sub_field('text_block');
+
+?>
+
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+        <?php echo $textBlock ?>
+
+    </div>
+  </div>
+</div>
+
+
+<?php endif;
+
+?>
+      
+
+
+      <?php  echo '</div>';
   }
   echo '</section>';
 

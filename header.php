@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700|Libre+Franklin:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|Poppins:400,600" rel="stylesheet">
 	<?php wp_head(); ?>
 
 </head>
@@ -69,6 +69,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="toggle-line"></span>
 					<span class="toggle-line"></span>
 			</a>
+			<a class="mobile-phone" href="tel:1300226926"> <i class="fas fa-phone"></i></a>
 
 			<div class="col">
 				<?php wp_nav_menu(

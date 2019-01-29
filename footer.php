@@ -75,7 +75,7 @@
 	<div class="container footer__bottom">
 		<div class="row">
 			<div class="col-sm-6">
-					<p>© Copyright The Banyans  <a href="#">Privacy Policy</a></p>
+					<p>© Copyright The Banyans  <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a></p>
 			</div>
 
 			<div class="col-sm-6 makers-mark">
@@ -117,6 +117,26 @@
   var mySwiper = new Swiper ('.blog-carousel', {
     // Optional parameters
     direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.next',
+      prevEl: '.prev',
+    },
+
+  })
+  </script>
+
+<script>
+  var mySwiper = new Swiper ('.gallery', {
+    // Optional parameters
+	direction: 'horizontal',
     loop: true,
 
     // If we need pagination

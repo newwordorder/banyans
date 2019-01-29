@@ -39,7 +39,7 @@ if( !empty($image) ):
     <div class="col-md-8 text-center">
       <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
       <h1><?php the_title(); ?></h1>
-      <hr class="line mt-5" />
+      <hr class="line mt-2" />
     </div>
   </div>
 </div>
@@ -66,7 +66,7 @@ if( !empty($image) ):
             while ( have_rows('posts_blocks') ) : the_row();
 
             if( get_row_layout() == 'text_block' ): ?>
-
+<!-- text -->
             <div class="row justify-content-center my-5">
               <div class="col-md-8">
 
@@ -78,8 +78,8 @@ if( !empty($image) ):
           <?php  endif;
 
           if( get_row_layout() == 'image_block' ): ?>
-
-          <div class="row justify-content-center my-5">
+<!-- image -->
+          <div class="row justify-content-center my-5"> 
             <div class="col-md-10">
             <?php
 							$image = get_sub_field('image');
@@ -90,12 +90,60 @@ if( !empty($image) ):
             $alt = $image['alt'];
 
             ?>
-              <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+              <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
             <?php endif; ?>
 
             </div>
           </div>
-          <?php endif; ?>
+
+          <?php endif; 
+          if( get_row_layout() == 'video_block' ): ?>
+<!-- video -->
+          <div class="row justify-content-center my-5"> 
+            <div class="col-md-10">
+            <?php
+							$video = get_sub_field('video_embed_code');
+  
+
+            ?>
+            <div class="embed-container rounded">
+              <?php echo $video ?>
+              </div>
+            </div>
+          </div>
+          <?php endif; 
+          if( get_row_layout() == 'gallery_block' ): ?>
+          <!-- video -->
+                    <div class="row justify-content-center my-5"> 
+                      <div class="col-md-10">
+                      <?php 
+
+$images = get_sub_field('gallery');
+$size = 'full'; // (thumbnail, medium, large, full or custom size)
+
+if( $images ): ?>
+  <!-- Slider main container -->
+  <div class="swiper-container gallery rounded">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper align-items-center">
+
+      <?php foreach( $images as $image ): ?>
+        <img class="rounded swiper-slide mb-0" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <?php endforeach; ?>
+
+    </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="prev"><i class="fal fa-arrow-left"></i></div>
+      <div class="next"><i class="fal fa-arrow-right"></i></div>
+  </div>
+
+<?php endif; ?>
+                      </div>
+                    </div>
+                    <?php endif; ?>
           <?php  endwhile;
 
           endif;
