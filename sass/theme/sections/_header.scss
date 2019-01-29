@@ -294,3 +294,13 @@
     display: flex!important;
   }
 }
+
+.mobile-phone {
+  position: absolute;
+  top: 1.25rem;
+  left: 2rem;
+  display: none;
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+}

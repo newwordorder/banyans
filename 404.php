@@ -7,82 +7,115 @@
 
 get_header();
 
-$container   = get_theme_mod( 'understrap_container_type' );
-$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 ?>
 
-<div class="wrapper" id="error-404-wrapper">
+<section id="sub-header"
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+data-overlay="7"
+>
 
-		<div class="row">
+<?php
 
-			<div class="col-md-12 content-area" id="primary">
+if( !empty($image) ):
 
-				<main class="site-main" id="main">
+  // vars
+  $url = $image['url'];
+  $alt = $image['alt'];
 
-					<section class="error-404 not-found">
+  ?>
+  <div class="background-image-holder">
+    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+  </div>
+<?php endif; ?>
 
-						<header class="page-header">
-
-							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.',
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+		<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.',
 							'understrap' ); ?></h1>
-
-						</header><!-- .page-header -->
-
-						<div class="page-content">
-
-							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?',
+	
+		<p><?php esc_html_e( 'It looks like nothing was found at this location.',
 							'understrap' ); ?></p>
+      <hr class="line mt-5" />
+    </div>
+  </div>
+</div>
 
-							<?php get_search_form(); ?>
+<?php get_template_part( 'page-templates/blocks/overlap' ); ?>
 
-							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+</section>
+<section class="related-posts  pb-5">
+  <div class="container">
 
-							<?php if ( understrap_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+    <div class="row justify-content-center pt-5">
+    <?php
+        // Default arguments
+        $args = array(
+          'posts_per_page' => 3, // How many items to display
+          'post__not_in'   => array( get_the_ID() ), // Exclude current post
+          'no_found_rows'  => true, // We don't ned pagination so this speeds up the query
+        );
 
-								<div class="widget widget_categories">
+        // Check for current post category and add tax_query to the query arguments
+        $cats = wp_get_post_terms( get_the_ID(), 'category' );
+        $cats_ids = array();
+        foreach( $cats as $wpex_related_cat ) {
+          $cats_ids[] = $wpex_related_cat->term_id;
+        }
+        if ( ! empty( $cats_ids ) ) {
+          $args['category__in'] = $cats_ids;
+        }
 
-									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'understrap' ); ?></h2>
+        // Query posts
+        $wpex_query = new wp_query( $args );
 
-									<ul>
-										<?php
-										wp_list_categories( array(
-											'orderby'    => 'count',
-											'order'      => 'DESC',
-											'show_count' => 1,
-											'title_li'   => '',
-											'number'     => 10,
-										) );
-										?>
-									</ul>
+        // Loop through posts
+        foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
 
-								</div><!-- .widget -->
+          <article class="col-sm-6 col-md-4 text-center blog-tile">
 
-							<?php endif; ?>
+            <a href="<?php the_permalink(); ?>" class="">
+              <div class="blog-tile__thumb ">
+                <?php
+                $backgroundImage = get_field('background_image_background_image');
 
-							<?php
+                if( !empty($backgroundImage) ):
 
-							/* translators: %1$s: smiley */
-							$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'understrap' ), convert_smilies( ':)' ) ) . '</p>';
-							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+                  // vars
+                  $url = $backgroundImage['url'];
+                  $alt = $backgroundImage['alt'];
 
-							the_widget( 'WP_Widget_Tag_Cloud' );
-							?>
+                  $size = '600x400';
+                  $thumb = $backgroundImage['sizes'][ $size ];
+                  $width = $backgroundImage['sizes'][ $size . '-width' ];
+                  $height = $backgroundImage['sizes'][ $size . '-height' ];
 
-						</div><!-- .page-content -->
+                  ?>
+                  <div class="background-image-holder ">
+                    <img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                  </div>
+                <?php endif; ?>
+              </div>
+              <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+              <h5><?php the_title(); ?></h5>
+            </a>
 
-					</section><!-- .error-404 -->
 
-				</main><!-- #main -->
+          </article>
 
-			</div><!-- #primary -->
+        <?php
+        // End loop
+        endforeach;
 
-		</div><!-- .row -->
+        // Reset post data
+        wp_reset_postdata(); ?>
+    </div>
+  </div>
 
-	</div><!-- Container end -->
 
-</div><!-- Wrapper end -->
+</section>
+
 
 <?php get_footer(); ?>
