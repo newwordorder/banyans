@@ -16081,6 +16081,10 @@ a:not(.btn) {
 .bg--white p {
   color: #3C6279; }
 
+.page ul, .page ol {
+  padding-left: 2rem;
+  margin-bottom: 1rem; }
+
 .header {
   position: absolute;
   top: 0;
@@ -16370,6 +16374,10 @@ a:not(.btn) {
       color: #3C6279 !important; }
     .feature-column--boxed .lead {
       color: #247691 !important; }
+    .feature-column--boxed a:not(.btn) {
+      color: #AAD0D0 !important; }
+      .feature-column--boxed a:not(.btn):hover {
+        color: #89bebe !important; }
   .feature-column__image, .feature-column__icon {
     margin-bottom: 30px; }
   .feature-column__icon {
