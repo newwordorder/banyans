@@ -8,9 +8,10 @@
       $url = get_sub_field('url');
       $pageUrl = get_sub_field('page_url');
       $buttonStyle = get_sub_field('button_style');
+      $block = get_sub_field('block');
       ?>
 
-      <a href="<?php if( $linkType == 'url' ): echo $url; endif;?><?php if( $linkType == 'page' ): echo $pageUrl; endif; ?>" class="btn btn--<?php echo $buttonStyle ?>"><?php echo $buttonText ?> </a>
+      <a href="<?php if( $linkType == 'url' ): echo $url; endif;?><?php if( $linkType == 'page' ): echo $pageUrl; endif; ?>" class="btn btn--<?php echo $buttonStyle ?> <?php if( $block == 'true' ): ?> btn--block <?php endif;?>"><?php echo $buttonText ?>  </a>
 
     <?php endwhile; ?>
   </div>

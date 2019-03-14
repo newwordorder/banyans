@@ -171,6 +171,8 @@ section {
   padding: 1rem 1.875rem;
   border-radius: 3px;
   letter-spacing: 1px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 
   &--solid {
     background: $dark;
@@ -210,6 +212,10 @@ section {
     &:first-of-type {
       padding: 0.8em 0em;
     }
+  }
+
+  &--block {
+    display: block;
   }
 
 }
