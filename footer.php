@@ -79,7 +79,7 @@
 			</div>
 
 			<div class="col-sm-6 makers-mark">
-				<p>Site by <a href="#" target="_blank">NWO</a></p>
+				<p>Site by <a href="http://newwordorder.com.au" target="_blank">NWO</a></p>
 			</div>
 
 		</div>

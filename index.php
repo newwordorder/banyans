@@ -125,7 +125,7 @@ if ($featured->have_posts()):?>
 								$height = $backgroundImage['sizes'][ $size . '-height' ];
 
 								?>
-								<div class="background-image-holder ">
+								<div class="background-image-holder " style="background: url('<?php echo $thumb; ?>'); opacity: 1;">
 									<img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
 								</div>
 							<?php endif; ?>

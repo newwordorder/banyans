@@ -20,9 +20,13 @@ $bottomBgColour = get_sub_field('bottom_bg_colour');
                     // vars
                     $url = $image['url'];
                     $alt = $image['alt'];
+                    $size = 'large';
+                    $thumb = $image['sizes'][ $size ];
+                    $width = $image['sizes'][ $size . '-width' ];
+                    $height = $image['sizes'][ $size . '-height' ];
 
                     ?>
-                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                     <?php endif; ?>
                 </div>
             </div>
@@ -48,9 +52,13 @@ $bottomBgColour = get_sub_field('bottom_bg_colour');
                         // vars
                         $url = $image['url'];
                         $alt = $image['alt'];
+                        $size = 'large';
+                        $thumb = $image['sizes'][ $size ];
+                        $width = $image['sizes'][ $size . '-width' ];
+                        $height = $image['sizes'][ $size . '-height' ];
 
                         ?>
-                        <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                        <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                         <?php endif; ?>
                     </div>
                 </div>

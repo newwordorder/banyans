@@ -40,37 +40,44 @@ function misha_loadmore_ajax_handler(){
 
 
 					<?php while ( have_posts() ) : the_post(); ?>
-						<article class="col-sm-6 col-md-4 text-center blog-tile">
+					<article class="col-sm-6 col-md-4 blog-tile">
+					<div class="blog-tile--inner">
+					<a href="<?php the_permalink(); ?>" class="">
+						<div class="blog-tile__thumb ">
+							<?php
+							$backgroundImage = get_field('background_image_background_image');
 
-							<a href="<?php the_permalink(); ?>" class="">
-                  <div class="blog-tile__thumb ">
-						          <?php
-						          $workImage = get_field('background_image_background_image');
+							if( !empty($backgroundImage) ):
 
-						          if( !empty($workImage) ):
+								// vars
+								$url = $backgroundImage['url'];
+								$alt = $backgroundImage['alt'];
 
-						            // vars
-                        $url = $workImage['url'];
-                        $alt = $workImage['alt'];
+								$size = '600x400';
+								$thumb = $backgroundImage['sizes'][ $size ];
+								$width = $backgroundImage['sizes'][ $size . '-width' ];
+								$height = $backgroundImage['sizes'][ $size . '-height' ];
 
-                        $size = '600x400';
-                        $thumb = $workImage['sizes'][ $size ];
-                        $width = $workImage['sizes'][ $size . '-width' ];
-                        $height = $workImage['sizes'][ $size . '-height' ];
+								?>
+								<div class="background-image-holder " style="background: url('<?php echo $thumb; ?>'); opacity: 1;">
+									<img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+								</div>
+							<?php endif; ?>
+						</div>
+						<div class="blog-tile__details">
+							<h6><?php $category_detail = get_the_category();
+							foreach($category_detail as $cd){
+								echo $cd->cat_name;
+								}
+							?>
+							</h6>
+							<h5><?php the_title(); ?></h5>
 
-						            ?>
-                        <div class="background-image-holder ">
-						              <img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
-                        </div>
-						          <?php endif; ?>
-                    </div>
+						</div>
+					</a>
+							</div>
 
-										<h3><?php the_title(); ?></h3>
-                    <a class="link" href="<?php the_permalink(); ?>">Read</a>
-								</a>
-
-
-					</article>
+				</article>
 
 					<?php endwhile; ?>
 
