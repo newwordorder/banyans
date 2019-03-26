@@ -16081,6 +16081,10 @@ a:not(.btn) {
 .bg--white p {
   color: #3C6279; }
 
+.page ul, .page ol {
+  padding-left: 2rem;
+  margin-bottom: 1rem; }
+
 .header {
   position: absolute;
   top: 0;
@@ -16313,6 +16317,7 @@ a:not(.btn) {
     list-style: none;
     text-align: center;
     margin-bottom: 1rem;
+    padding-left: 0;
     line-height: 1.75rem; }
     @media (max-width: 767.98px) {
       .footer .footer-menu ul {
@@ -16370,6 +16375,10 @@ a:not(.btn) {
       color: #3C6279 !important; }
     .feature-column--boxed .lead {
       color: #247691 !important; }
+    .feature-column--boxed a:not(.btn) {
+      color: #AAD0D0 !important; }
+      .feature-column--boxed a:not(.btn):hover {
+        color: #89bebe !important; }
   .feature-column__image, .feature-column__icon {
     margin-bottom: 30px; }
   .feature-column__icon {
@@ -16551,7 +16560,9 @@ section {
   color: #AAD0D0;
   padding: 1rem 1.875rem;
   border-radius: 3px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem; }
   .btn--solid,
   .wpcf7 input[type=submit] {
     background: #043452;
@@ -16576,6 +16587,8 @@ section {
       box-shadow: none; }
     .btn--link:first-of-type {
       padding: 0.8em 0em; }
+  .btn--block {
+    display: block; }
 
 .link {
   background: transparent;

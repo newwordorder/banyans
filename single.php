@@ -12,6 +12,8 @@ $image = $backgroundImage['background_image'];
 $imageOverlay = $backgroundImage['image_overlay'];
 $backgroundEffect = $backgroundImage['background_effect'];
 $invertColours = $backgroundImage['invert_colours'];
+$headerText = get_field('header_text');
+
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <section id="sub-header"
@@ -27,10 +29,14 @@ if( !empty($image) ):
   // vars
   $url = $image['url'];
   $alt = $image['alt'];
+  $size = 'large';
+  $thumb = $backgroundImage['sizes'][ $size ];
+  $width = $backgroundImage['sizes'][ $size . '-width' ];
+  $height = $backgroundImage['sizes'][ $size . '-height' ];
 
   ?>
   <div class="background-image-holder">
-    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
   </div>
 <?php endif; ?>
 
@@ -38,7 +44,11 @@ if( !empty($image) ):
   <div class="row justify-content-center">
     <div class="col-md-8 text-center">
       <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
-      <h1><?php the_title(); ?></h1>
+      <?php if($headerText): ?>
+      <h1><?php echo $headerText; ?></h1>
+       <? else: ?>
+       <h1><?php the_title(); ?></h1>
+       <?php endif; ?>
       <hr class="line mt-2" />
     </div>
   </div>
@@ -212,7 +222,13 @@ if( $images ): ?>
                 <?php endif; ?>
               </div>
               <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+              <?php $headerText = get_field('header_text'); ?>
+              <?php if($headerText): ?>
+              <h5><?php echo $headerText; ?></h5>
+              <? else: ?>
               <h5><?php the_title(); ?></h5>
+              <?php endif; ?>
+              
             </a>
 
 

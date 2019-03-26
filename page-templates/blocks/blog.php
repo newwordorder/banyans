@@ -46,7 +46,12 @@ if( get_row_layout() == 'blog_posts' ):
 							<?php endif; ?>
 						</div>
             <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
-						<h5><?php the_title(); ?></h5>
+						<?php $headerText = get_field('header_text'); ?>
+              <?php if($headerText): ?>
+              <h5><?php echo $headerText; ?></h5>
+              <? else: ?>
+              <h5><?php the_title(); ?></h5>
+              <?php endif; ?>
 					</a>
 
 

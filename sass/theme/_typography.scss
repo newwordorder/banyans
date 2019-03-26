@@ -136,3 +136,10 @@ hr {
         color: $body-color;
       }
     }
+
+.page {
+  ul, ol {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}

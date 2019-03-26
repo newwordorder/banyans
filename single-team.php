@@ -25,10 +25,14 @@ if( !empty($image) ):
   // vars
   $url = $image['url'];
   $alt = $image['alt'];
+  $size = 'large';
+  $thumb = $backgroundImage['sizes'][ $size ];
+  $width = $backgroundImage['sizes'][ $size . '-width' ];
+  $height = $backgroundImage['sizes'][ $size . '-height' ];
 
   ?>
   <div class="background-image-holder">
-    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
   </div>
 <?php endif; ?>
 

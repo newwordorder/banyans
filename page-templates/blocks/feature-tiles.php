@@ -32,10 +32,14 @@ if( get_row_layout() == 'feature_tiles' ):
                     // vars
                     $url = $image['url'];
                     $alt = $image['alt'];
+                    $size = '600x400';
+                    $thumb = $image['sizes'][ $size ];
+                    $width = $image['sizes'][ $size . '-width' ];
+                    $height = $image['sizes'][ $size . '-height' ];
 
                     ?>
                     <div class="background-image-holder" >
-                      <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                     </div>
                   <?php endif; ?>
                 </div>

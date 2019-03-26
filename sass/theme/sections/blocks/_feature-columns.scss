@@ -38,6 +38,13 @@
       color: $heading-color!important;
     }
 
+    a:not(.btn) {
+      color: $primary!important;
+      &:hover {
+        color: darken($primary,10%)!important;
+      }
+    }
+
   }
 
 
