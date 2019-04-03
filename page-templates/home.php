@@ -22,7 +22,7 @@ $headerText = get_field('header_text');
 <section id="sub-header"
 
 class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg"
-data-overlay="5"
+data-overlay="1"
 >
 
 
