@@ -23,6 +23,13 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/archive-seo_articles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/archive-seo_articles.php",
+		"oF": 0
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
