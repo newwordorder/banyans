@@ -9,6 +9,7 @@ $media = get_sub_field('media');
 $text = get_sub_field('text_block');
 
 $image = get_sub_field('image');
+$imageFormat = get_sub_field('image_format');
 
 $videoEmbedCode = get_sub_field('video_embed_code');
 $videoCoverImage = get_sub_field('video_cover_image');
@@ -30,16 +31,49 @@ $spaceBelow = get_sub_field('space_below');
           </div>
           <div class="<?php if( $layout == '1/3' ): echo 'col-md-4'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-6'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-8'; endif; ?> flippable__image">
 
-            <?php if( $media == 'image' ): ?>
+          <?php if( $media == 'image' ): ?>
               <?php if( !empty($image) ):
 
                 // vars
                 $url = $image['url'];
                 $alt = $image['alt'];
+                $size = 'large';
+                $thumb = $image['sizes'][ $size ];
+                $width = $image['sizes'][ $size . '-width' ];
+                $height = $image['sizes'][ $size . '-height' ];
+                
 
                ?>
-                <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                <?php if( $imageFormat == 'square' ): ?>
+                <div class="image image--square rounded">
+                  <div class="background-image-holder">
+                      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                  </div> 
+                </div>
+               <?php endif; //end square ?>
+
+               <?php if( $imageFormat == 'landscape' ): ?>
+                <div class="image image--landscape rounded">
+                  <div class="background-image-holder">
+                      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                  </div> 
+                </div>
+               <?php endif; //end landscape ?>
+
+               <?php if( $imageFormat == 'portrait' ): ?>
+                <div class="image image--portrait rounded">
+                  <div class="background-image-holder">
+                      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                  </div> 
+                </div>
+               <?php endif; //end portrait ?>
+
+               <?php if( $imageFormat == 'none' ): ?>
+                <img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+               <?php endif; //end none ?> 
               <?php endif; //end $image ?>
+
+            
 
             <?php endif; //end $media ?>
 

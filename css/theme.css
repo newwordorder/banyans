@@ -16089,7 +16089,7 @@ a:not(.btn) {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1020;
+  z-index: 3;
   width: 100%; }
   .header svg {
     font-size: 1.25rem;
@@ -16412,6 +16412,19 @@ a:not(.btn) {
   .feature-tile:hover .background-image-holder {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+
+.image {
+  position: relative;
+  height: 0;
+  overflow: hidden; }
+  .image--square {
+    padding-top: 100%; }
+  .image--landscape {
+    padding-top: calc((2 / 3) * 100%); }
+  .image--portrait {
+    padding-top: calc((3 / 2) * 100%); }
+  .image__caption {
+    margin: 1em 0; }
 
 .timeline {
   align-items: stretch; }
@@ -16976,6 +16989,7 @@ section {
 
 .blog-categories {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
   justify-content: center; }
