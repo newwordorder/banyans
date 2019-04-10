@@ -36,9 +36,13 @@ $spaceBelow = get_sub_field('space_below');
                 // vars
                 $url = $image['url'];
                 $alt = $image['alt'];
+                $size = 'large';
+                $thumb = $image['sizes'][ $size ];
+                $width = $image['sizes'][ $size . '-width' ];
+                $height = $image['sizes'][ $size . '-height' ];
 
                ?>
-                <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                <img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
               <?php endif; //end $image ?>
 
             <?php endif; //end $media ?>
@@ -61,10 +65,7 @@ $spaceBelow = get_sub_field('space_below');
 
                     <?php foreach( $images as $image ): ?>
                     
-                    <div class="swiper-slide text-center">
-                      <img class="mb-2" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                      <p class="mb-2"><?php echo $image['caption']; ?></p>
-                    </div>
+                      <img class="swiper-slide mb-0" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                     <?php endforeach; ?>
             
                   </div>
