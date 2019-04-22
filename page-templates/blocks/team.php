@@ -19,10 +19,24 @@ if( get_row_layout() == 'team' ):
         <?php setup_postdata($post); ?>
         <a href="<?php the_permalink(); ?>" class="col-md-3">
         <div >
-            <div class="team__portrait">
-                <div class="background-image-holder">
-                    <img src="<?php $image = get_field('portrait_photo'); echo $image['url'] ?>" />
+            <div class="team__portrait ">
+            
+            <?php $image = get_field('portrait_photo'); if( !empty($image) ):
+
+                // vars
+                $url = $image['url'];
+                $alt = $image['alt'];
+                $size = '400x600';
+                $thumb = $image['sizes'][ $size ];
+                $width = $image['sizes'][ $size . '-width' ];
+                $height = $image['sizes'][ $size . '-height' ];
+
+                ?>
+                <div class="background-image-holder rounded">
+                <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                 </div>
+                <?php endif; ?>
+           
             </div>
             <div class="team__blurb">
            <h5><?php the_title(); ?></h5>

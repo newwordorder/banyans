@@ -171,6 +171,8 @@ section {
   padding: 1rem 1.875rem;
   border-radius: 3px;
   letter-spacing: 1px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 
   &--solid {
     background: $dark;
@@ -212,6 +214,10 @@ section {
     }
   }
 
+  &--block {
+    display: block;
+  }
+
 }
 
 .link {
@@ -232,6 +238,10 @@ section {
 }
 
 .cta {
+
+  &__icon {
+    max-width: 100px;
+  }
 
   &__buttons {
     text-align: right;
@@ -578,9 +588,18 @@ section {
   }
   .layer--2{
     bottom:40px;
+    @include media-breakpoint-down(sm) {
+      bottom:30px;
+    }
   }
   .layer--3{
     bottom:80px;
+    @include media-breakpoint-down(md) {
+      bottom:60px;
+    }
+    @include media-breakpoint-down(sm) {
+      bottom:50px;
+    }
   }
 }
 
@@ -728,8 +747,7 @@ section {
   }
 }
 
-.blog-carousel {
-  display: grid;
+.blog-carousel, .gallery {
   overflow: hidden;
 
   .next, .prev {
@@ -740,6 +758,12 @@ section {
     font-size: 1.25rem;
     opacity: 0;
     transition: 0.2s;
+    height: 100%;
+    top: 0;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     &:hover {
       opacity: 1!important;
@@ -747,11 +771,12 @@ section {
   }
 
   .next {
-    right: 3rem;
+    right: 0;
+    
   }
 
   .prev {
-    left: 3rem;
+    left: 0;
   }
 
   &:hover {

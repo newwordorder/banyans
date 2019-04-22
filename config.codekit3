@@ -23,6 +23,13 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/archive-seo_articles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/archive-seo_articles.php",
+		"oF": 0
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -587,6 +594,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/inc/pagination.php",
+		"oF": 0
+		},
+	"/inc/seo-articles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/inc/seo-articles.php",
 		"oF": 0
 		},
 	"/inc/setup.php": {
@@ -1355,13 +1369,6 @@
 		"oAP": "/page-templates/blocks/blog.php",
 		"oF": 0
 		},
-	"/page-templates/blocks/carousel.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-templates/blocks/carousel.php",
-		"oF": 0
-		},
 	"/page-templates/blocks/cta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1381,6 +1388,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/blocks/feature-tiles.php",
+		"oF": 0
+		},
+	"/page-templates/blocks/gallery.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/gallery.php",
 		"oF": 0
 		},
 	"/page-templates/blocks/image.php": {
@@ -1451,6 +1465,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/blocks/text-text.php",
+		"oF": 0
+		},
+	"/page-templates/blocks/timeline.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/timeline.php",
 		"oF": 0
 		},
 	"/page-templates/blocks/video.php": {
@@ -1780,15 +1801,31 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/sass/theme/swiper.css": {
-		"aP": 1,
+	"/sass/theme/sections/blocks/_timeline.scss": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "/sass/theme/swiper-min.css",
+		"oA": 1,
+		"oAP": "/sass/theme/sections/blocks/_timeline.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/theme/swiper.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/theme/swiper.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/sass/understrap/understrap.scss": {
 		"aP": 0,

@@ -1,56 +1,115 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * The template for displaying all default posts.
  *
  * @package understrap
  */
 
 get_header();
+$backgroundImage = get_field('background_image');
 
-$container   = get_theme_mod( 'understrap_container_type' );
-
+$image = $backgroundImage['background_image'];
+$imageOverlay = $backgroundImage['image_overlay'];
+$backgroundEffect = $backgroundImage['background_effect'];
+$invertColours = $backgroundImage['invert_colours'];
 ?>
+<?php while ( have_posts() ) : the_post(); ?>
+<section id="sub-header"
 
-<div class="wrapper" id="page-wrapper">
+class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+data-overlay="7"
+>
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+<?php
 
-		<div class="row">
+if( !empty($image) ):
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+  // vars
+  $url = $image['url'];
+  $alt = $image['alt'];
 
-			<main class="site-main" id="main">
+  ?>
+  <div class="background-image-holder">
+    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+  </div>
+<?php endif; ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <h1><?php the_title(); ?></h1>
+      <hr class="line mt-2" />
+    </div>
+  </div>
+</div>
 
-					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+<?php get_template_part( 'page-templates/blocks/overlap' ); ?>
 
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
+</section>
 
-				<?php endwhile; // end of the loop. ?>
+<section id="single-wrapper" class="space--md bg--light">
 
-			</main><!-- #main -->
+	<div class="container" id="content" tabindex="-1">
 
-		</div><!-- #primary -->
+			<main id="main">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <?php the_content(); ?>
+            </div>
+          </div>
 
-		<!-- Do the right sidebar check -->
-		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+          <?php  // check if the flexible content field has rows of data
+          if( have_rows('posts_blocks') ):
 
-	</div><!-- .row -->
+            // loop through the rows of data
+            while ( have_rows('posts_blocks') ) : the_row();
+
+            if( get_row_layout() == 'text_block' ): ?>
+
+            <div class="row justify-content-center my-5">
+              <div class="col-md-8">
+
+                <?php the_sub_field('text_block'); ?>
+
+              </div>
+            </div>
+
+          <?php  endif;
+
+          if( get_row_layout() == 'image_block' ): ?>
+
+          <div class="row justify-content-center my-5">
+            <div class="col-md-10">
+            <?php
+							$image = get_sub_field('image');
+            if( !empty($image) ):
+
+            // vars
+            $url = $image['url'];
+            $alt = $image['alt'];
+
+            ?>
+              <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+            <?php endif; ?>
+
+            </div>
+          </div>
+          <?php endif; ?>
+          <?php  endwhile;
+
+          endif;
+
+          ?>
+      </main><!-- #main -->
 
 </div><!-- Container end -->
 
-</div><!-- Wrapper end -->
+</section><!-- Wrapper end -->
 
-<?php get_footer(); ?>
+
+<?php endwhile; // end of the loop. ?>
+
+<?php 
+        get_template_part( 'page-templates/blocks/pre-footer-cta' );
+        get_footer(); 
+      ?>

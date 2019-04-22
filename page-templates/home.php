@@ -22,7 +22,7 @@ $headerText = get_field('header_text');
 <section id="sub-header"
 
 class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg"
-data-overlay="5"
+data-overlay="1"
 >
 
 
@@ -31,10 +31,14 @@ data-overlay="5"
     // vars
     $url = $image['url'];
     $alt = $image['alt'];
+    $size = 'large';
+    $thumb = $image['sizes'][ $size ];
+    $width = $image['sizes'][ $size . '-width' ];
+    $height = $image['sizes'][ $size . '-height' ];
 
   ?>
     <div class="background-image-holder">
-      <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
     </div>
   <?php endif; ?>
 

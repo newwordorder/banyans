@@ -12,6 +12,8 @@ $image = $backgroundImage['background_image'];
 $imageOverlay = $backgroundImage['image_overlay'];
 $backgroundEffect = $backgroundImage['background_effect'];
 $invertColours = $backgroundImage['invert_colours'];
+$headerText = get_field('header_text');
+
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <section id="sub-header"
@@ -27,10 +29,14 @@ if( !empty($image) ):
   // vars
   $url = $image['url'];
   $alt = $image['alt'];
+  $size = 'large';
+  $thumb = $backgroundImage['sizes'][ $size ];
+  $width = $backgroundImage['sizes'][ $size . '-width' ];
+  $height = $backgroundImage['sizes'][ $size . '-height' ];
 
   ?>
   <div class="background-image-holder">
-    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
   </div>
 <?php endif; ?>
 
@@ -38,8 +44,12 @@ if( !empty($image) ):
   <div class="row justify-content-center">
     <div class="col-md-8 text-center">
       <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
-      <h1><?php the_title(); ?></h1>
-      <hr class="line mt-5" />
+      <?php if($headerText): ?>
+      <h1><?php echo $headerText; ?></h1>
+       <? else: ?>
+       <h1><?php the_title(); ?></h1>
+       <?php endif; ?>
+      <hr class="line mt-2" />
     </div>
   </div>
 </div>
@@ -53,17 +63,20 @@ if( !empty($image) ):
 	<div class="container" id="content" tabindex="-1">
 
 			<main id="main">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <?php the_content(); ?>
+            </div>
+          </div>
 
-					<?php the_content();
-
-          // check if the flexible content field has rows of data
+          <?php  // check if the flexible content field has rows of data
           if( have_rows('posts_blocks') ):
 
             // loop through the rows of data
             while ( have_rows('posts_blocks') ) : the_row();
 
             if( get_row_layout() == 'text_block' ): ?>
-
+<!-- text -->
             <div class="row justify-content-center my-5">
               <div class="col-md-8">
 
@@ -75,8 +88,8 @@ if( !empty($image) ):
           <?php  endif;
 
           if( get_row_layout() == 'image_block' ): ?>
-
-          <div class="row justify-content-center my-5">
+<!-- image -->
+          <div class="row justify-content-center my-5"> 
             <div class="col-md-10">
             <?php
 							$image = get_sub_field('image');
@@ -87,12 +100,60 @@ if( !empty($image) ):
             $alt = $image['alt'];
 
             ?>
-              <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+              <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
             <?php endif; ?>
 
             </div>
           </div>
-          <?php endif; ?>
+
+          <?php endif; 
+          if( get_row_layout() == 'video_block' ): ?>
+<!-- video -->
+          <div class="row justify-content-center my-5"> 
+            <div class="col-md-10">
+            <?php
+							$video = get_sub_field('video_embed_code');
+  
+
+            ?>
+            <div class="embed-container rounded">
+              <?php echo $video ?>
+              </div>
+            </div>
+          </div>
+          <?php endif; 
+          if( get_row_layout() == 'gallery_block' ): ?>
+          <!-- video -->
+                    <div class="row justify-content-center my-5"> 
+                      <div class="col-md-10">
+                      <?php 
+
+$images = get_sub_field('gallery');
+$size = 'full'; // (thumbnail, medium, large, full or custom size)
+
+if( $images ): ?>
+  <!-- Slider main container -->
+  <div class="swiper-container gallery rounded">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper align-items-center">
+
+      <?php foreach( $images as $image ): ?>
+        <img class="rounded swiper-slide mb-0" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <?php endforeach; ?>
+
+    </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="prev"><i class="fal fa-arrow-left"></i></div>
+      <div class="next"><i class="fal fa-arrow-right"></i></div>
+  </div>
+
+<?php endif; ?>
+                      </div>
+                    </div>
+                    <?php endif; ?>
           <?php  endwhile;
 
           endif;
@@ -161,7 +222,13 @@ if( !empty($image) ):
                 <?php endif; ?>
               </div>
               <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+              <?php $headerText = get_field('header_text'); ?>
+              <?php if($headerText): ?>
+              <h5><?php echo $headerText; ?></h5>
+              <? else: ?>
               <h5><?php the_title(); ?></h5>
+              <?php endif; ?>
+              
             </a>
 
 

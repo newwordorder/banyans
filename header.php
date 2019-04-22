@@ -29,8 +29,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700|Libre+Franklin:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|Poppins:400,600" rel="stylesheet">
 	<?php wp_head(); ?>
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-W83X7F9');</script>
+	<!-- End Google Tag Manager -->
 
 </head>
 
@@ -69,6 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="toggle-line"></span>
 					<span class="toggle-line"></span>
 			</a>
+			<a class="mobile-phone" href="tel:1300226926"> <i class="fas fa-phone"></i></a>
 
 			<div class="col">
 				<?php wp_nav_menu(
