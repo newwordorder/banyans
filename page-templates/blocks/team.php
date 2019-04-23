@@ -17,8 +17,13 @@ if( get_row_layout() == 'team' ):
             <div class="row">
     <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
         <?php setup_postdata($post); ?>
-        <a href="<?php the_permalink(); ?>" class="col-md-3">
-        <div >
+        <?php $link = get_field('disable_page'); ?>
+        <?php if( $link  == 'yes' ): ?>
+            <div class="col-md-3">
+        <?php else: ?>
+            <a href="<?php the_permalink(); ?>" class="col-md-3">
+        <?php endif; ?>
+        
             <div class="team__portrait ">
             
             <?php $image = get_field('portrait_photo'); if( !empty($image) ):
@@ -42,8 +47,11 @@ if( get_row_layout() == 'team' ):
            <h5><?php the_title(); ?></h5>
             <h6 class="team__position"><?php the_field('position'); ?></h6>
             </div>
-        </div>
-    </a>
+        <?php if( $link  == 'yes' ): ?>
+            </div> 
+        <?php else: ?>
+            </a>  
+        <?php endif; ?>
     <?php endforeach; ?>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
     </div>
