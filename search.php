@@ -5,33 +5,37 @@
  * @package understrap
  */
 
-get_header();
+get_header('internal');
 
-$container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper" id="search-wrapper">
+<section id="sub-header" class="page page-header bg--dark pb-5">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+<div class="container">
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-10">
+	<h1 class="text-center">
+		<?php printf(
+		/* translators:*/
+			esc_html__( 'Search Results for: %s', 'understrap' ),
+			'<span>' . get_search_query() . '</span>' ); ?></h1>
+    </div>
+  </div>
+</div>
+<?php get_template_part( 'page-templates/blocks/overlap' ); ?>
 
-		<div class="row">
+		</section>
+<div class="wrapper bg--light py-5" id="search-wrapper">
 
-			<!-- Do the left sidebar check and opens the primary div -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+	<div class="container" id="content" tabindex="-1">
 
-			<main class="site-main" id="main">
+		<div class="row justify-content-center">
+
+
+			<main class="col-md-10">
 
 				<?php if ( have_posts() ) : ?>
-
-					<header class="page-header">
-						
-							<h1 class="page-title"><?php printf(
-							/* translators:*/
-							 esc_html__( 'Search Results for: %s', 'understrap' ),
-								'<span>' . get_search_query() . '</span>' ); ?></h1>
-
-					</header><!-- .page-header -->
 
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -55,13 +59,12 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 			</main><!-- #main -->
 
-			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
+			
 
 		</div><!-- #primary -->
+		<!-- The pagination component -->
+		<?php understrap_pagination(); ?>
 
-		<!-- Do the right sidebar check -->
-		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 	</div><!-- .row -->
 
