@@ -493,7 +493,7 @@ section {
   width: 100%;
 }
 .heading__split{
-  padding:2.5em;
+  padding: 1.5em;
   display: flex;
   flex-direction:row;
   align-items:center;
@@ -501,7 +501,7 @@ section {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,0.10);
   
   svg{
-    font-size:1.875rem;
+    font-size:1.5rem;
     transition: 0.2s;
     @include media-breakpoint-down(sm) {
       font-size: 1.25rem;
@@ -529,8 +529,9 @@ section {
   &--title{
     text-transform:uppercase;
     font-family:$font-sans-semibold;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
     font-size:0.875rem;
+    font-weight: 700;
   }
   &--bottom {
     text-transform:uppercase;
@@ -539,7 +540,7 @@ section {
     font-size:0.875rem;
     color:$dark!important;
   }
-  h3{
+  h4{
     margin-bottom:0;
     @include media-breakpoint-down(sm) {
       font-size: 1.25rem;

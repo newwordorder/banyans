@@ -16820,14 +16820,14 @@ section {
   width: 100%; }
 
 .heading__split {
-  padding: 2.5em;
+  padding: 1.5em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); }
   .heading__split svg {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     transition: 0.2s; }
     @media (max-width: 767.98px) {
       .heading__split svg {
@@ -16851,17 +16851,18 @@ section {
     text-transform: uppercase;
     font-family: "Poppins-SemiBold", sans-serif;
     letter-spacing: 1px;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    font-weight: 700; }
   .heading__split--bottom {
     text-transform: uppercase;
     font-family: "Poppins-SemiBold", sans-serif;
     letter-spacing: 1px;
     font-size: 0.875rem;
     color: #043452 !important; }
-  .heading__split h3 {
+  .heading__split h4 {
     margin-bottom: 0; }
     @media (max-width: 767.98px) {
-      .heading__split h3 {
+      .heading__split h4 {
         font-size: 1.25rem; } }
   .heading__split:hover svg {
     -webkit-transform: translatex(10px);
