@@ -68,7 +68,7 @@ if ($featured->have_posts()):?>
 <section class="space--md bg--light">
 	<div class="container">
 		<div class="row justify-content-center mb-5">
-			<div class="col-md-8 text-center">
+			<div class="col-md-10 text-center">
 
 				<?php
 				$categories = get_categories( array(

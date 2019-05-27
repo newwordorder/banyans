@@ -26,9 +26,9 @@ if( !empty($image) ):
   $url = $image['url'];
   $alt = $image['alt'];
   $size = 'large';
-  $thumb = $backgroundImage['sizes'][ $size ];
-  $width = $backgroundImage['sizes'][ $size . '-width' ];
-  $height = $backgroundImage['sizes'][ $size . '-height' ];
+  $thumb = $image['sizes'][ $size ];
+  $width = $image['sizes'][ $size . '-width' ];
+  $height = $image['sizes'][ $size . '-height' ];
 
   ?>
   <div class="background-image-holder">

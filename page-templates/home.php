@@ -16,7 +16,7 @@ $backgroundImage = get_field('background_image');
 $image = $backgroundImage['background_image'];
 $backgroundEffect = $backgroundImage['background_effect'];
 
-$headerText = get_field('header_text');
+$headerText = get_field('home_header_text');
 ?>
 <div class="overlayLayer"></div>
 <section id="sub-header"
@@ -46,7 +46,7 @@ data-overlay="1"
   <div class="row justify-content-center">
     <div class="col-md-10 text-center">
     <?php if($headerText): ?>
-      <h1 class="page-title"><?php echo $headerText; ?></h1>
+      <?php echo $headerText; ?>
        <? else: ?>
        <h1 class="page-title"><?php the_title(); ?></h1>
        <?php endif; ?>

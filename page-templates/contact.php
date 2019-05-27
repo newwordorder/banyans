@@ -34,6 +34,7 @@ data-overlay="5"
     // vars
     $url = $image['url'];
     $alt = $image['alt'];
+    $size = 'large';
     $thumb = $image['sizes'][ $size ];
     $width = $image['sizes'][ $size . '-width' ];
     $height = $image['sizes'][ $size . '-height' ];
