@@ -30,7 +30,7 @@ if( !empty($image) ):
 
   ?>
   <div class="background-image-holder">
-    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+    <img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
   </div>
 <?php endif; ?>
 
@@ -89,7 +89,7 @@ if( !empty($image) ):
             $alt = $image['alt'];
 
             ?>
-              <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+              <img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
             <?php endif; ?>
 
             </div>

@@ -38,7 +38,7 @@ if ($featured->have_posts()):?>
 	?>
 	<div class="swiper-slide bg--dark " data-overlay="5" style="width:100%; height:100%">
 		<div class="background-image-holder">
-			<img src="<?php echo $bg_image['url']; ?>" />
+			<img data-src="<?php echo $bg_image['url']; ?>" />
 		</div>
 		<div style="width:100%;">
 			<div class="container" style="padding: 200px 15px 150px; height:100%; z-index:5 !important;">
@@ -126,7 +126,7 @@ if ($featured->have_posts()):?>
 
 								?>
 								<div class="background-image-holder " style="background: url('<?php echo $thumb; ?>'); opacity: 1;">
-									<img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+									<img class="" data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
 								</div>
 							<?php endif; ?>
 						</div>

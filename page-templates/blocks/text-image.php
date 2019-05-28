@@ -47,7 +47,7 @@ $spaceBelow = get_sub_field('space_below');
                 <?php if( $imageFormat == 'square' ): ?>
                 <div class="image image--square rounded">
                   <div class="background-image-holder">
-                      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                      <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                   </div> 
                 </div>
                <?php endif; //end square ?>
@@ -55,7 +55,7 @@ $spaceBelow = get_sub_field('space_below');
                <?php if( $imageFormat == 'landscape' ): ?>
                 <div class="image image--landscape rounded">
                   <div class="background-image-holder">
-                      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                      <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                   </div> 
                 </div>
                <?php endif; //end landscape ?>
@@ -63,13 +63,13 @@ $spaceBelow = get_sub_field('space_below');
                <?php if( $imageFormat == 'portrait' ): ?>
                 <div class="image image--portrait rounded">
                   <div class="background-image-holder">
-                      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                      <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                   </div> 
                 </div>
                <?php endif; //end portrait ?>
 
                <?php if( $imageFormat == 'none' ): ?>
-                <img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                <img class="rounded" data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                <?php endif; //end none ?> 
               <?php endif; //end $image ?>
 
@@ -95,7 +95,7 @@ $spaceBelow = get_sub_field('space_below');
 
                     <?php foreach( $images as $image ): ?>
                     
-                      <img class="swiper-slide mb-0" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                      <img class="swiper-slide mb-0" data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                     <?php endforeach; ?>
             
                   </div>

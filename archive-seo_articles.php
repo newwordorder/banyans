@@ -65,7 +65,7 @@ class="page-header page-header--page bg--dark" >
 
 								?>
 								<div class="background-image-holder ">
-									<img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+									<img class="" data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
 								</div>
 							<?php endif; ?>
 						</div>

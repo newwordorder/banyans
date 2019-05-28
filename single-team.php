@@ -59,7 +59,7 @@ if( !empty($image) ):
 
       <div class="portrait">
         <div class="background-image-holder">
-          <img src="<?php echo $portrait['url']; ?>"/>
+          <img data-src="<?php echo $portrait['url']; ?>"/>
         </div>
       </div>
 

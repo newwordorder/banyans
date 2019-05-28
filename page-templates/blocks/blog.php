@@ -41,7 +41,7 @@ if( get_row_layout() == 'blog_posts' ):
 
 								?>
 								<div class="background-image-holder ">
-									<img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+									<img class="" data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
 								</div>
 							<?php endif; ?>
 						</div>
@@ -97,7 +97,7 @@ if( get_row_layout() == 'blog_posts' ):
 
                     ?>
                     <div class="background-image-holder ">
-                      <img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                      <img class="" data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                     </div>
                   <?php endif; ?>
                 </div>

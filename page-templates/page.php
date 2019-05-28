@@ -41,7 +41,7 @@ data-overlay="5"
 
   ?>
     <div class="background-image-holder">
-      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+      <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
     </div>
   <?php endif; ?>
 
