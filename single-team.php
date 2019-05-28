@@ -32,7 +32,7 @@ if( !empty($image) ):
 
   ?>
   <div class="background-image-holder">
-    <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
   </div>
 <?php endif; ?>
 
