@@ -38,7 +38,7 @@ data-overlay="1"
 
   ?>
     <div class="background-image-holder">
-      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+      <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
     </div>
   <?php endif; ?>
 
@@ -59,8 +59,8 @@ data-overlay="1"
   <div class="col-md-12 text-center py-4"><p class="heading__split--title"><?php the_field('heading'); ?></p></div>
   <div class="col-md-12">
   <div class="row">
-    <a href="<?php the_field('left_button_link'); ?>" class="col-md-5 offset-md-1 heading__split heading__split--left"><h3><?php the_field('left_button_text'); ?></h3> <i class="fal fa-arrow-right"></i></a>
-    <a href="<?php the_field('right_button_link'); ?>" class="col-md-5 heading__split heading__split--right"><h3><?php the_field('right_button_text'); ?></h3> <i class="fal fa-arrow-right"></i></a>
+    <a href="<?php the_field('left_button_link'); ?>" class="col-md-5 offset-md-1 heading__split heading__split--left"><h4><?php the_field('left_button_text'); ?></h4> <i class="fal fa-arrow-right"></i></a>
+    <a href="<?php the_field('right_button_link'); ?>" class="col-md-5 heading__split heading__split--right"><h4><?php the_field('right_button_text'); ?></h4> <i class="fal fa-arrow-right"></i></a>
     </div>
   </div>
   <div class="col-md-12 text-center py-4"><a href="<?php the_field('bottom_button_link'); ?>" class="heading__split--bottom"><?php the_field('bottom_button_text'); ?> <i class="far fa-arrow-right"></i></a></div>

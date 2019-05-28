@@ -39,7 +39,7 @@ if( get_row_layout() == 'feature_tiles' ):
 
                     ?>
                     <div class="background-image-holder" >
-                      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                      <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                     </div>
                   <?php endif; ?>
                 </div>

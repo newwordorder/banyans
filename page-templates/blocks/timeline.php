@@ -23,7 +23,7 @@ if( get_row_layout() == 'timeline' ):
                 $alt = $image['alt'];
 
                 ?>
-                <img class="rounded feature-column__image" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                <img class="rounded feature-column__image" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
               <?php endif; ?>
             </div>
             <div class="col-md-6 timeline__col timeline__text">

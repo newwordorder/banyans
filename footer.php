@@ -15,7 +15,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<a href="<?php echo get_home_url(); ?>" id="" class="footer__logo">
-					<img class="footer__logo" src="<?php bloginfo('template_directory'); ?>/img/logo--dark.svg" alt="Logo">
+					<img class="footer__logo" data-src="<?php bloginfo('template_directory'); ?>/img/logo--dark.svg" alt="Logo">
 				</a>
 			</div>
 		</div>
@@ -86,7 +86,12 @@
 	</div>
 </footer>
 
-
+<div class="search-form ">
+    <span class="search-close">
+        <i class="fas fa-times"></i>
+    </span>
+    <?php get_template_part('searchform'); ?>
+</div>
 
 
 
@@ -94,6 +99,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/flickity.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/imageboy-min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/fontawesome-all.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/smooth-scroll.js"></script>
@@ -102,15 +108,26 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/TimelineMax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/CustomEase.js"></script>
-
 <script src="<?php echo get_template_directory_uri(); ?>/js/swiper.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lazyload.js"></script>
 
     
 
 <script>
 	AOS.init();
+	(function($) {
+        $(".btn--search a").click(function() {
+            $(".search-form").toggleClass("is-open");
+        });
+
+    })(jQuery);
+
+    (function($) {
+        $(".search-close").click(function() {
+            $(".search-form").removeClass("is-open");
+        });
+    })(jQuery);
 </script>
 
 <script>

@@ -36,7 +36,7 @@ if( !empty($image) ):
 
   ?>
   <div class="background-image-holder">
-    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+    <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
   </div>
 <?php endif; ?>
 
@@ -100,7 +100,7 @@ if( !empty($image) ):
             $alt = $image['alt'];
 
             ?>
-              <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+              <img class="rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
             <?php endif; ?>
 
             </div>
@@ -138,7 +138,7 @@ if( $images ): ?>
     <div class="swiper-wrapper align-items-center">
 
       <?php foreach( $images as $image ): ?>
-        <img class="rounded swiper-slide mb-0" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <img class="rounded swiper-slide mb-0" data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
       <?php endforeach; ?>
 
     </div>
@@ -217,7 +217,7 @@ if( $images ): ?>
 
                   ?>
                   <div class="background-image-holder ">
-                    <img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                    <img class="" data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                   </div>
                 <?php endif; ?>
               </div>

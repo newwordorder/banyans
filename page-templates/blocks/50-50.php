@@ -26,7 +26,7 @@ $bottomBgColour = get_sub_field('bottom_bg_colour');
                     $height = $image['sizes'][ $size . '-height' ];
 
                     ?>
-                    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                    <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                     <?php endif; ?>
                 </div>
             </div>
@@ -58,7 +58,7 @@ $bottomBgColour = get_sub_field('bottom_bg_colour');
                         $height = $image['sizes'][ $size . '-height' ];
 
                         ?>
-                        <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                        <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                         <?php endif; ?>
                     </div>
                 </div>
