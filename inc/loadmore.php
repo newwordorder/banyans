@@ -60,7 +60,7 @@ function misha_loadmore_ajax_handler(){
 
 								?>
 								<div class="background-image-holder " style="background: url('<?php echo $thumb; ?>'); opacity: 1;">
-									<img class="" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+									<img class="" data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
 								</div>
 							<?php endif; ?>
 						</div>

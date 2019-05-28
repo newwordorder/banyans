@@ -20,7 +20,7 @@ if( get_row_layout() == 'image' ):
 
    ?>
 
-  <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+  <img class="" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
   <?php endif; ?>
 
 <?php else: ?>
@@ -39,7 +39,7 @@ if( get_row_layout() == 'image' ):
         $alt = $image['alt'];
 
        ?>
-      <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+      <img style="position:relative; display:block;" class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
       <?php endif; ?>
 
     </div>

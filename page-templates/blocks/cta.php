@@ -28,7 +28,7 @@ $spaceBelow = get_sub_field('text_image_space_below');
 
                 ?>
                 <div class="col-md-2">
-                <img class="cta__icon" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                <img class="cta__icon" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
                 
                 </div>
 
@@ -60,7 +60,7 @@ $spaceBelow = get_sub_field('text_image_space_below');
                 $alt = $icon['alt'];
 
                 ?>
-                <img class="cta__icon" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                <img class="cta__icon" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
                 <?php endif; ?>
 
                 <?php echo $text ?>

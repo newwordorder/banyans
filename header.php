@@ -68,8 +68,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-3">
 			<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
 
-				<img class="logo logo--light" src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="The Banyans">
-				<img class="logo logo--dark" src="<?php bloginfo('template_directory'); ?>/img/logo--dark.svg" alt="The Banyans">
+				<img class="logo logo--light" data-src="<?php bloginfo('template_directory'); ?>/img/logo--light.svg" alt="The Banyans">
+				<img class="logo logo--dark" data-src="<?php bloginfo('template_directory'); ?>/img/logo--dark.svg" alt="The Banyans">
 			</a>
 			</div>
 			<a id="toggleMenu" class="toggle-menu">

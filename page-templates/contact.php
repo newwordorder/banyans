@@ -40,7 +40,7 @@ data-overlay="5"
     $height = $image['sizes'][ $size . '-height' ];
   ?>
     <div class="background-image-holder">
-      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+      <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
     </div>
   <?php endif; ?>
 

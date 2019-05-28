@@ -38,7 +38,7 @@ if( get_row_layout() == 'team' ):
 
                 ?>
                 <div class="background-image-holder rounded">
-                <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                <img data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                 </div>
                 <?php endif; ?>
            
