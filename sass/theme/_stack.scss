@@ -8643,7 +8643,7 @@ input[type="submit"][type="submit"].btn--loading:after {
 
 input,
 select {
-  height: 2.78571429em;
+  min-height: 3em;
 }
 
 input.field-error {

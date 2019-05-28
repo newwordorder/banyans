@@ -44,32 +44,6 @@
 		"oAP": "/author.php",
 		"oF": 0
 		},
-	"/bower.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/bower-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
 	"/codesniffer.ruleset.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -83,14 +57,6 @@
 		"oA": 0,
 		"oAP": "/comments.php",
 		"oF": 0
-		},
-	"/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
 		},
 	"/css/custom-editor-style.css": {
 		"aP": 1,
@@ -391,52 +357,6 @@
 		"oAP": "/functions.php",
 		"oF": 0
 		},
-	"/global-templates/hero.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/global-templates/hero.php",
-		"oF": 0
-		},
-	"/global-templates/left-sidebar-check.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/global-templates/left-sidebar-check.php",
-		"oF": 0
-		},
-	"/global-templates/pagination.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/global-templates/pagination.php",
-		"oF": 0
-		},
-	"/global-templates/right-sidebar-check.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/global-templates/right-sidebar-check.php",
-		"oF": 0
-		},
-	"/gulpconfig.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/gulpconfig-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/gulpfile.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/gulpfile-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -682,16 +602,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/countdown.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/countdown.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/CustomEase.js": {
 		"ft": 64,
 		"ma": 0,
@@ -708,26 +618,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/customizer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/datepicker.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/datepicker-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/easypiechart.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/easypiechart.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -752,16 +642,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/granim.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/granim.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/header.js": {
 		"ft": 64,
 		"ma": 0,
@@ -782,32 +662,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/isotope.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/isotope.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/jquery-3.1.1.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/jquery-3.1.1.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/jquery.steps.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/jquery.steps.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1018,36 +878,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/TweenMax.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/twitterfetcher.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/twitterfetcher.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/typed.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/typed.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/ytplayer.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/ytplayer.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1318,22 +1148,6 @@
 		"oAP": "/loop-templates/content.php",
 		"oF": 0
 		},
-	"/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-lock-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"/page-templates/blocks.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1418,13 +1232,6 @@
 		"oAP": "/page-templates/blocks/overlap.php",
 		"oF": 0
 		},
-	"/page-templates/blocks/postTextblock.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-templates/blocks/postTextblock.php",
-		"oF": 0
-		},
 	"/page-templates/blocks/pre-footer-cta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1502,43 +1309,11 @@
 		"oAP": "/page-templates/page.php",
 		"oF": 0
 		},
-	"/page-templates/postblocks.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-templates/postblocks.php",
-		"oF": 0
-		},
 	"/page.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page.php",
-		"oF": 0
-		},
-	"/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/readme.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/readme.txt",
 		"oF": 0
 		},
 	"/sass/assets/aos/_animations.scss": {
@@ -1839,17 +1614,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/screenshot.png": {
-		"ft": 32768,
-		"iS": 374002,
-		"oA": 0,
-		"oAP": "/screenshot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/search.php": {
 		"cB": 0,
@@ -3238,13 +3002,6 @@
 		"oAP": "/style-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/yarn.lock": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/yarn.lock",
-		"oF": 0
 		}
 	},
 "hooks": [
