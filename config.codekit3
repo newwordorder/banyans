@@ -68,16 +68,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/css/theme-blessed1.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/theme-blessed1-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/css/theme.css": {
 		"aP": 1,
 		"bl": 0,
@@ -87,23 +77,6 @@
 		"oAP": "/css/theme-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/css/theme.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/theme.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/css/theme.min.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/css/theme.min.css.map",
-		"oF": 0
 		},
 	"/favicon/android-chrome-192x192.png": {
 		"ft": 32768,
@@ -652,6 +625,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/homeIntro-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/homeIntro-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/homeIntro.js": {
 		"ft": 64,
 		"ma": 0,
@@ -662,12 +645,52 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/imageboy-min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/imageboy-min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/imageboy-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/imageboy-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/jquery-3.1.1.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/jquery-3.1.1.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/lazyload-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/lazyload-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/lazyload.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/lazyload-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1183,6 +1206,13 @@
 		"oAP": "/page-templates/blocks/blog.php",
 		"oF": 0
 		},
+	"/page-templates/blocks/client-logos.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/client-logos.php",
+		"oF": 0
+		},
 	"/page-templates/blocks/cta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1533,6 +1563,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/sass/theme/sections/blocks/_blocks.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/theme/sections/blocks/_client-logos.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/theme/sections/blocks/_client-logos.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

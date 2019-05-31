@@ -30,6 +30,7 @@ if( have_rows('blocks') ) {
          get_template_part( 'page-templates/blocks/team' );
          get_template_part( 'page-templates/blocks/timeline' );
          get_template_part( 'page-templates/blocks/gallery' );
+         get_template_part( 'page-templates/blocks/client-logos' );
 
       }
 
