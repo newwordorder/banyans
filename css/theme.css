@@ -16491,6 +16491,17 @@ a:not(.btn) {
         padding: 2rem;
         flex: none; } }
 
+.client-logos {
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .client-logos:hover {
+    opacity: 1; }
+  .client-logos__image {
+    margin: 1rem;
+    max-width: 128px; }
+
 body {
   background: #043452; }
 
