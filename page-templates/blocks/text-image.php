@@ -69,7 +69,7 @@ $spaceBelow = get_sub_field('space_below');
                <?php endif; //end portrait ?>
 
                <?php if( $imageFormat == 'none' ): ?>
-                <img class="rounded" data-src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+                <img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
                <?php endif; //end none ?> 
               <?php endif; //end $image ?>
 
