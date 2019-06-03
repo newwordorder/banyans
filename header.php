@@ -44,7 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?>>
 
-
+<script async src="//tag.benchplatform.com/benchmarketingsmarttag/get?b55f8da87b5f4bacd102be87ce6eb73c28451d4417087c3538a320ee7274f2c5"></script> 
 
 	<!-- ******************* The Navbar Area ******************* -->
 <a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
