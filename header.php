@@ -39,11 +39,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-W83X7F9');</script>
 	<!-- End Google Tag Manager -->
+	<script async src="//tag.benchplatform.com/benchmarketingsmarttag/get?b55f8da87b5f4bacd102be87ce6eb73c28451d4417087c3538a320ee7274f2c5"></script> 
 
 </head>
 
 <body <?php body_class(); ?>>
-
 
 
 	<!-- ******************* The Navbar Area ******************* -->
