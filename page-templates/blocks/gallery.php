@@ -29,7 +29,7 @@ if( get_row_layout() == 'gallery' ):
 
             <?php foreach( $images as $image ): ?>
               <div class="swiper-slide text-center">
-                <img class=" mb-2" data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <img class=" mb-2" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                 <p class="mb-2"><?php echo $image['caption']; ?></p>
               </div>
             <?php endforeach; ?>

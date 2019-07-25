@@ -257,7 +257,6 @@
   var lazyload = function lazyload() {
     var imgs = document.querySelectorAll('img');
     imgs.forEach(function(image) {
-      console.log(image);
       var elementObserver = ElementObserver(image, {
         onEnter: function onEnter(image, viewport) {
           var imgSrc = image.dataset.src;

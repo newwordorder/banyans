@@ -14,7 +14,6 @@ function ScrollReveal(){
     
     a.forEach(section => {
         let u = Array.from(section.children);
-        console.log(u);
         u.forEach( element => {
             if(isVisible(element)){
                 TweenLite.set(element, {opacity:0});
