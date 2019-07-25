@@ -19,6 +19,7 @@ $backgroundEffect = $backgroundImage['background_effect'];
 $headerText = get_field('home_header_text');
 ?>
 <div class="overlayLayer"></div>
+
 <section id="sub-header"
 
 class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg"
@@ -75,6 +76,5 @@ data-overlay="1"
       get_template_part( 'page-templates/blocks/pre-footer-cta' );
 ?>
 </div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/homeIntro.js"></script>
 
 <?php get_footer();

@@ -117,8 +117,6 @@ if ( ! function_exists( 'understrap_customize_preview_js' ) ) {
 	 * Setup JS integration for live previewing.
 	 */
 	function understrap_customize_preview_js() {
-		wp_enqueue_script( 'understrap_customizer', get_template_directory_uri() . '/js/customizer.js',
-			array( 'customize-preview' ), '20130508', true );
 	}
 }
 add_action( 'customize_preview_init', 'understrap_customize_preview_js' );

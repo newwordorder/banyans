@@ -96,39 +96,12 @@
 
 
 <?php wp_footer(); ?>
-
+<script src="<?php echo get_template_directory_uri(); ?>/dist/main.bundle.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/flickity.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/imageboy-min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/fontawesome-all.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/smooth-scroll.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/aos.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/TimelineMax.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/CustomEase.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/swiper.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/lazyload.js"></script>
 
     
-
-<script>
-	AOS.init();
-	(function($) {
-        $(".btn--search a").click(function() {
-            $(".search-form").toggleClass("is-open");
-        });
-
-    })(jQuery);
-
-    (function($) {
-        $(".search-close").click(function() {
-            $(".search-form").removeClass("is-open");
-        });
-    })(jQuery);
-</script>
-
+<!--
 <script>
   var mySwiper = new Swiper ('.blog-carousel', {
     // Optional parameters
@@ -168,7 +141,7 @@
 
   })
   </script>
-
+-->
 </body>
 
 </html>
