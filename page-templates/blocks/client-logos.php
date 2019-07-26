@@ -18,7 +18,7 @@ if( get_row_layout() == 'client_logos' ):
   <?php $counter = 0;?>
     <div class="container space-below--<?php echo $spaceBelow ?>">
 
-      <div class="row justify-content-center">
+      <div class="client_logos_selector row justify-content-center">
 
         <?php	// loop through the rows of data
         while ( have_rows('logos') ) : the_row(); 
@@ -49,7 +49,7 @@ if( get_row_layout() == 'client_logos' ):
 
                     ?>
 
-                    <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    <img class="" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
                     <?php endif; ?>
 
                 </a>
@@ -65,7 +65,7 @@ if( get_row_layout() == 'client_logos' ):
                         $alt = $image['alt'];
 
                     ?>
-                    <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    <img class="" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
                     <?php endif; ?>
 
               <?php endif; ?>

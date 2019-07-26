@@ -7067,6 +7067,11 @@ vendors@^1.0.0:
   resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.3.tgz#a6467781abd366217c050f8202e7e50cc9eef8c0"
   integrity sha512-fOi47nsJP5Wqefa43kyWSg80qF+Q3XA6MUkgi7Hp1HQaKDQW4cQrK2D0P7mmbFtsV1N89am55Yru/nyEwRubcw==
 
+viewprt@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/viewprt/-/viewprt-3.1.1.tgz#8837372c0ac128992d8cb1662c14c2190c7bd04d"
+  integrity sha512-IL988nWeSqLNEYX6wdFD6RrDG46243liBdyKdDyMQxZyGakKw3VzZLhromGO+d0HTnlp4gEBHD120xpXJzD6Lg==
+
 vm-browserify@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
